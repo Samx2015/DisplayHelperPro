@@ -8,35 +8,136 @@
       name="description"
       content="DisplayHelperPro's privacy policy for local display controls, update checks, feedback emails, diagnostics, and support contact."
     >
-    <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+      :root {
+        color-scheme: light;
+        --ink: #141716;
+        --muted: #5f6763;
+        --paper: #f7f8f6;
+        --line: #dfe4df;
+        --teal: #006d6d;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background: #fff;
+        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.65;
+      }
+
+      a {
+        color: var(--teal);
+        font-weight: 700;
+      }
+
+      header,
+      main {
+        width: min(100%, 880px);
+        margin: 0 auto;
+        padding: 0 24px;
+      }
+
+      header {
+        padding-top: 36px;
+        padding-bottom: 24px;
+      }
+
+      main {
+        padding-bottom: 44px;
+      }
+
+      h1 {
+        max-width: 760px;
+        margin: 0 0 10px;
+        font-size: clamp(2rem, 5vw, 2.7rem);
+        line-height: 1.14;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin: 32px 0 8px;
+        font-size: 1.5rem;
+        line-height: 1.18;
+      }
+
+      p {
+        margin: 0 0 13px;
+        color: var(--muted);
+      }
+
+      ul {
+        margin: 0 0 14px;
+        padding-left: 22px;
+        color: var(--muted);
+      }
+
+      li + li {
+        margin-top: 4px;
+      }
+
+      .summary {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1px;
+        margin: 2px 0 28px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        overflow: hidden;
+        background: var(--line);
+      }
+
+      .summary div {
+        min-height: 96px;
+        padding: 16px;
+        background: var(--paper);
+      }
+
+      .summary strong,
+      .summary span {
+        display: block;
+      }
+
+      .summary strong {
+        margin-bottom: 4px;
+      }
+
+      .summary span {
+        color: var(--muted);
+      }
+
+      .effective-date {
+        color: var(--muted);
+        font-weight: 650;
+      }
+
+      @media (max-width: 720px) {
+        .summary {
+          grid-template-columns: 1fr;
+        }
+
+        .summary div {
+          min-height: 0;
+        }
+      }
+    </style>
   </head>
-  <body class="policy-page">
-    <header class="site-header" aria-label="Primary">
-      <a class="brand" href="index.html" aria-label="DisplayHelperPro home">
-        <img src="assets/icon.svg" alt="" width="34" height="34">
-        <span>DisplayHelperPro</span>
-      </a>
-      <nav class="site-nav" aria-label="Site sections">
-        <a href="index.html#how-it-works">How It Works</a>
-        <a href="index.html#demo">Preview</a>
-        <a href="privacy.html" aria-current="page">Privacy</a>
-        <a href="index.html#download">Download</a>
-      </nav>
-      <a class="header-cta" href="index.html#download">Download</a>
+  <body>
+    <header>
+      <h1>DisplayHelperPro Privacy Policy</h1>
+      <p class="effective-date">Effective date: May 27, 2026</p>
+      <p>
+        DisplayHelperPro is a local-first macOS menu-bar utility for controlling the built-in
+        display in mirrored Mac setups.
+      </p>
     </header>
 
     <main>
-      <section class="policy-hero" aria-labelledby="policy-title">
-        <h1 id="policy-title">DisplayHelperPro Privacy Policy</h1>
-        <p class="policy-date">Effective date: May 27, 2026</p>
-        <p>
-          DisplayHelperPro is a menu-bar utility for controlling the built-in display in mirrored
-          Mac setups. Its display-management features run locally on your Mac.
-        </p>
-      </section>
-
-      <section class="policy-summary" aria-label="Privacy highlights">
+      <section class="summary" aria-label="Privacy highlights">
         <div>
           <strong>No account</strong>
           <span>No sign-in, subscription account, or user profile.</span>
@@ -51,136 +152,111 @@
         </div>
       </section>
 
-      <section class="policy-shell" aria-label="Full privacy policy">
-        <aside class="policy-nav" aria-label="Policy sections">
-          <a href="#collection">Data Collection</a>
-          <a href="#local-data">Local Data</a>
-          <a href="#network">Network Activity</a>
-          <a href="#feedback">Feedback</a>
-          <a href="#diagnostics">Diagnostics</a>
-          <a href="#choices">Your Choices</a>
-          <a href="#contact">Contact</a>
-        </aside>
+      <section>
+        <h2>Data Collection</h2>
+        <p>
+          DisplayHelperPro does not collect, store, sell, share, or transmit personal information
+          through its display-management features. Xintech LLC does not receive information about
+          your displays, settings, usage, or device from the app unless you intentionally send it
+          through email support.
+        </p>
+        <ul>
+          <li>No account is required.</li>
+          <li>No analytics, tracking SDKs, advertising SDKs, or crash-reporting SDKs are included.</li>
+          <li>No background telemetry is sent to Xintech LLC.</li>
+        </ul>
+      </section>
 
-        <div class="policy-content">
-          <section id="collection" class="policy-section">
-            <h2>Data Collection</h2>
-            <p>
-              DisplayHelperPro does not collect, store, sell, share, or transmit personal
-              information through its display-management features. Xintech LLC does not receive
-              information about your displays, settings, usage, or device from the app unless you
-              intentionally send it through email support.
-            </p>
-            <ul>
-              <li>No account is required.</li>
-              <li>No analytics, tracking SDKs, advertising SDKs, or crash-reporting SDKs are included.</li>
-              <li>No background telemetry is sent to Xintech LLC.</li>
-            </ul>
-          </section>
+      <section>
+        <h2>Local Data</h2>
+        <p>
+          DisplayHelperPro may store a small amount of local preference data and a bounded local
+          diagnostic log on your Mac. This is used only to make the app behave consistently between
+          launches and to prepare bug-report drafts when you choose to report a bug.
+        </p>
+        <p>Local preferences may include:</p>
+        <ul>
+          <li>Whether automatic blackout is enabled or disabled.</li>
+          <li>A local display identifier used to remember the preferred external display for mirroring.</li>
+          <li>A small bounded log of DisplayHelperPro diagnostic messages used for bug-report drafts.</li>
+        </ul>
+        <p>
+          The app uses macOS display APIs to inspect display layout, detect mirroring, adjust
+          built-in display brightness, manage Start at Login when you enable it, and restore a fixed
+          safe brightness value when needed. DisplayHelperPro does not store your previous
+          brightness.
+        </p>
+      </section>
 
-          <section id="local-data" class="policy-section">
-            <h2>Local Data</h2>
-            <p>
-              DisplayHelperPro may store a small amount of local preference data and a bounded local
-              diagnostic log on your Mac. This is used only to make the app behave consistently
-              between launches and to prepare bug-report drafts when you choose to report a bug.
-            </p>
-            <dl class="policy-list">
-              <div>
-                <dt>Auto Blackout preference</dt>
-                <dd>Whether automatic blackout is enabled or disabled.</dd>
-              </div>
-              <div>
-                <dt>Preferred external display</dt>
-                <dd>A local display identifier used to remember the external display selected for mirroring.</dd>
-              </div>
-              <div>
-                <dt>Start at Login</dt>
-                <dd>Managed through Apple's ServiceManagement system when you enable the setting.</dd>
-              </div>
-              <div>
-                <dt>Local diagnostic log</dt>
-                <dd>A small bounded log of DisplayHelperPro diagnostic messages used for bug-report drafts.</dd>
-              </div>
-            </dl>
-            <p>
-              The app uses macOS display APIs to inspect display layout, detect mirroring, adjust
-              built-in display brightness, and restore a fixed safe brightness value when needed.
-            </p>
-          </section>
+      <section>
+        <h2>Network Activity</h2>
+        <p>
+          DisplayHelperPro's normal display controls do not require a network connection. The app
+          may contact the public Sparkle update feed when automatic update checks are enabled or
+          when you choose "Check for Updates..." from the menu.
+        </p>
+        <p>
+          Update checks are used only to learn whether a newer version is available. They are not
+          used for advertising, analytics, account tracking, or usage tracking.
+        </p>
+      </section>
 
-          <section id="network" class="policy-section">
-            <h2>Network Activity</h2>
-            <p>
-              DisplayHelperPro's normal display controls do not require a network connection. The app
-              may contact the public Sparkle update feed when automatic update checks are enabled or
-              when you choose "Check for Updates..." from the menu.
-            </p>
-            <p>
-              Update checks are used only to learn whether a newer version is available. They are
-              not used for advertising, analytics, account tracking, or usage tracking.
-            </p>
-          </section>
+      <section>
+        <h2>Bug Reports, Feature Requests, and Feedback</h2>
+        <p>
+          The "Report a Bug...", "Suggest a Feature...", and "Send Feedback..." menu items open a
+          draft in your default email app addressed to Xintech LLC. The app does not send email
+          automatically. You can review, edit, or delete the draft before sending it.
+        </p>
+        <p>
+          The draft may include a short diagnostic summary so support can understand the context:
+          app version, macOS version, processor architecture, Auto Blackout state, built-in
+          mirroring state, and current app status. Your email address is visible to Xintech LLC only
+          if you send the email.
+        </p>
+        <p>
+          Bug report drafts also include a bounded excerpt of recent DisplayHelperPro diagnostic
+          logs. Feature request and general feedback drafts do not include logs.
+        </p>
+      </section>
 
-          <section id="feedback" class="policy-section">
-            <h2>Bug Reports, Feature Requests, and Feedback</h2>
-            <p>
-              The "Report a Bug...", "Suggest a Feature...", and "Send Feedback..." menu items open
-              a draft in your default email app addressed to Xintech LLC. The app does not send
-              email automatically. You can review, edit, or delete the draft before sending it.
-            </p>
-            <p>
-              The draft may include a short diagnostic summary so support can understand the
-              context: app version, macOS version, processor architecture, Auto Blackout state,
-              built-in mirroring state, and current app status. Your email address is visible to
-              Xintech LLC only if you send the email.
-            </p>
-            <p>
-              Bug report drafts also include a bounded excerpt of recent DisplayHelperPro diagnostic
-              logs. Feature request and general feedback drafts do not include logs.
-            </p>
-          </section>
+      <section>
+        <h2>Diagnostics and Logs</h2>
+        <p>
+          DisplayHelperPro writes diagnostic messages to Apple's local unified logging system and
+          keeps a small bounded app-local diagnostic log. These logs are stored locally on your Mac.
+          Choosing "Report a Bug..." collects a bounded DisplayHelperPro-only excerpt from the
+          app-local log and inserts it into the email draft.
+        </p>
+        <p>
+          The log excerpt uses the last 20 minutes of DisplayHelperPro logs when available. If
+          there are too few recent entries, the app may look back up to 24 hours and include the
+          most recent DisplayHelperPro entries, capped at 180 lines and 16,000 characters. Nothing
+          is sent unless you choose Send, and you can delete the log excerpt first.
+        </p>
+      </section>
 
-          <section id="diagnostics" class="policy-section">
-            <h2>Diagnostics and Logs</h2>
-            <p>
-              DisplayHelperPro writes diagnostic messages to Apple's local unified logging system and
-              keeps a small bounded app-local diagnostic log. These logs are stored locally on your
-              Mac. Choosing "Report a Bug..." collects a bounded DisplayHelperPro-only excerpt from
-              the app-local log and inserts it into the email draft.
-            </p>
-            <p>
-              The log excerpt uses the last 20 minutes of DisplayHelperPro logs when available. If
-              there are too few recent entries, the app may look back up to 24 hours and include the
-              most recent DisplayHelperPro entries, capped at 180 lines and 16,000 characters. Nothing
-              is sent unless you choose Send, and you can delete the log excerpt first.
-            </p>
-          </section>
+      <section>
+        <h2>Your Choices</h2>
+        <ul>
+          <li>You can leave feedback drafts unsent, edit them, or delete diagnostic details.</li>
+          <li>You can delete diagnostic summaries or log excerpts before sending bug reports.</li>
+          <li>You can disable automatic update checks in the Sparkle update preferences.</li>
+          <li>You can remove local app preferences using normal macOS preference-management tools.</li>
+        </ul>
+      </section>
 
-          <section id="choices" class="policy-section">
-            <h2>Your Choices</h2>
-            <ul>
-              <li>You can leave feedback drafts unsent, edit them, or delete diagnostic details.</li>
-              <li>You can delete diagnostic summaries or log excerpts before sending bug reports.</li>
-              <li>You can disable automatic update checks in the Sparkle update preferences.</li>
-              <li>You can remove local app preferences using normal macOS preference-management tools.</li>
-            </ul>
-          </section>
-
-          <section id="contact" class="policy-section">
-            <h2>Contact</h2>
-            <p>
-              For privacy questions or support, contact Xintech LLC at
-              <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.
-            </p>
-            <p>
-              Xintech LLC may update this policy if DisplayHelperPro's behavior changes. The effective
-              date above will change when the policy changes.
-            </p>
-          </section>
-        </div>
+      <section>
+        <h2>Contact</h2>
+        <p>
+          For privacy questions or support, contact Xintech LLC at
+          <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.
+        </p>
+        <p>
+          Xintech LLC may update this policy if DisplayHelperPro's behavior changes. The effective
+          date above will change when the policy changes.
+        </p>
       </section>
     </main>
-
   </body>
 </html>
