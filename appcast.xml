@@ -1,9 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
-  <channel>
-    <title>DisplayHelperPro Updates</title>
-    <link>https://github.com/Samx2015/DisplayHelperPro/releases</link>
-    <description>Software updates for DisplayHelperPro.</description>
-    <language>en</language>
-  </channel>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
+    <channel>
+        <title>DisplayHelperPro Updates</title>
+        <link>https://github.com/Samx2015/DisplayHelperPro/releases</link>
+        <description>Software updates for DisplayHelperPro.</description>
+        <language>en</language>
+        <item>
+            <title>1.1.1</title>
+            <pubDate>Wed, 27 May 2026 01:55:08 -0700</pubDate>
+            <link>https://samx2015.github.io/DisplayHelperPro/</link>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# DisplayHelperPro 1.1.1
+
+## Product Naming
+
+- Renamed the direct-download build to `DisplayHelperPro`.
+- Kept the direct-download bundle identifier as `com.xintechll.DisplayHelper`
+  so existing local preferences and Sparkle identity remain continuous.
+- Kept the App Store build branded as `DisplayHelper`.
+
+## Software Updates
+
+- Added a "Check for Updates..." menu item to the Pro build.
+- Configured the Pro Sparkle feed at
+  `https://samx2015.github.io/DisplayHelperPro/appcast.xml`.
+- Prepared Sparkle update signing with the public EdDSA key.
+
+## Privacy & Feedback
+
+- Added feedback menu items for bug reports, feature requests, and general
+  feedback.
+- Bug report drafts include a bounded DisplayHelperPro diagnostic log excerpt
+  that the user can review and delete before sending.
+- Display-management features remain local and account-free.
+
+## Install
+
+1. Open the DMG.
+2. Drag `DisplayHelperPro.app` onto `Applications - Drag App Here`.
+3. Open DisplayHelperPro from Applications.
+
+The app appears in the macOS menu bar.
+
+## Compatibility
+
+Compatibility note: This app depends on macOS display brightness behavior that
+may change in future macOS updates.
+
+Requires macOS 13.0 or later.
+]]></description>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-build2-macOS.dmg" length="3057560" type="application/octet-stream" sparkle:edSignature="CuzA3GEJM1hYXROFYMOOmNdIF7hFxWy+pbbM1FBV3AjsPSKv2fIAwCJZfqa1gzZRWF+PdrDecYi7Of+OOxK5Cw=="/>
+        </item>
+    </channel>
 </rss>
