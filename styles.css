@@ -356,6 +356,13 @@ p {
   font-size: 0.95rem;
 }
 
+.rule-row em a {
+  color: var(--teal-dark);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
 .rule-on {
   border-color: rgba(0, 167, 165, 0.42);
 }
