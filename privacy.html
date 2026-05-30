@@ -129,7 +129,7 @@
   <body>
     <header>
       <h1>DisplayHelperPro Privacy Policy</h1>
-      <p class="effective-date">Effective date: May 27, 2026</p>
+      <p class="effective-date">Effective date: May 30, 2026</p>
       <p>
         DisplayHelperPro is a local-first macOS menu-bar utility for controlling the built-in
         display in mirrored Mac setups.
@@ -139,8 +139,8 @@
     <main>
       <section class="summary" aria-label="Privacy highlights">
         <div>
-          <strong>No account</strong>
-          <span>No sign-in, subscription account, or user profile.</span>
+          <strong>No app account</strong>
+          <span>No DisplayHelperPro sign-in or user profile.</span>
         </div>
         <div>
           <strong>No analytics</strong>
@@ -158,10 +158,10 @@
           DisplayHelperPro does not collect, store, sell, share, or transmit personal information
           through its display-management features. Xintech LLC does not receive information about
           your displays, settings, usage, or device from the app unless you intentionally send it
-          through email support.
+          through email support or activate a license.
         </p>
         <ul>
-          <li>No account is required.</li>
+          <li>No DisplayHelperPro account is required.</li>
           <li>No analytics, tracking SDKs, advertising SDKs, or crash-reporting SDKs are included.</li>
           <li>No background telemetry is sent to Xintech LLC.</li>
         </ul>
@@ -179,6 +179,9 @@
           <li>Whether automatic blackout is enabled or disabled.</li>
           <li>A local display identifier used to remember the preferred external display for mirroring.</li>
           <li>A small bounded log of DisplayHelperPro diagnostic messages used for bug-report drafts.</li>
+          <li>Trial start and trial-expired markers stored locally and in Keychain to manage trial access.</li>
+          <li>A license key and Lemon Squeezy license instance identifier stored in your Mac's Keychain if you activate a license.</li>
+          <li>Non-secret license timestamps, such as the last successful validation time, used for offline grace behavior.</li>
         </ul>
         <p>
           The app uses macOS display APIs to inspect display layout, detect mirroring, adjust
@@ -200,6 +203,18 @@
         <p>
           Update checks are used only to learn whether a newer version is available. They are not
           used for advertising, analytics, account tracking, or usage tracking.
+        </p>
+        <p>
+          If you choose "Activate License...", DisplayHelperPro contacts Lemon Squeezy to activate,
+          validate, or deactivate your license. License requests send your license key and an
+          instance name based on your Mac's local computer name, such as "DisplayHelper Pro on
+          Sam's Mac," so you can recognize and deactivate that Mac later.
+        </p>
+        <p>
+          Lemon Squeezy may return license, product, order, and customer metadata needed to verify
+          the license. DisplayHelperPro stores only the license key, the local license instance
+          identifier, local trial markers, and local validation timestamps. License requests are not
+          used for analytics, advertising, or usage tracking.
         </p>
       </section>
 
@@ -244,6 +259,8 @@
           <li>You can leave feedback drafts unsent, edit them, or delete diagnostic details.</li>
           <li>You can delete diagnostic summaries or log excerpts before sending bug reports.</li>
           <li>You can disable automatic update checks in the Sparkle update preferences.</li>
+          <li>You can use DisplayHelperPro without activating a license, with a reminder.</li>
+          <li>You can deactivate this Mac from the license window.</li>
           <li>You can remove local app preferences using normal macOS preference-management tools.</li>
         </ul>
       </section>
