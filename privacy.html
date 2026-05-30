@@ -10,12 +10,14 @@
     >
     <style>
       :root {
-        color-scheme: light;
-        --ink: #141716;
-        --muted: #5f6763;
-        --paper: #f7f8f6;
-        --line: #dfe4df;
-        --teal: #006d6d;
+        color-scheme: dark;
+        --ink: #f5f7f4;
+        --muted: #aab6b0;
+        --paper: #080d0e;
+        --panel: #111819;
+        --panel-soft: #0d1415;
+        --line: #2a3436;
+        --teal: #80f2ea;
       }
 
       * {
@@ -25,7 +27,9 @@
       body {
         margin: 0;
         color: var(--ink);
-        background: #fff;
+        background:
+          radial-gradient(circle at top left, rgba(128, 242, 234, 0.12), transparent 32rem),
+          linear-gradient(180deg, #0b1112 0%, var(--paper) 48%, #050707 100%);
         font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
         line-height: 1.65;
       }
@@ -94,7 +98,7 @@
       .summary div {
         min-height: 96px;
         padding: 16px;
-        background: var(--paper);
+        background: var(--panel);
       }
 
       .summary strong,
@@ -177,6 +181,8 @@
         <p>Local preferences may include:</p>
         <ul>
           <li>Whether automatic blackout is enabled or disabled.</li>
+          <li>Whether built-in mirroring should be enabled on launch.</li>
+          <li>Custom keyboard shortcuts for DisplayHelperPro menu actions.</li>
           <li>A local display identifier used to remember the preferred external display for mirroring.</li>
           <li>A small bounded log of DisplayHelperPro diagnostic messages used for bug-report drafts.</li>
           <li>Trial start and trial-expired markers stored locally and in Keychain to manage trial access.</li>
@@ -259,7 +265,7 @@
           <li>You can leave feedback drafts unsent, edit them, or delete diagnostic details.</li>
           <li>You can delete diagnostic summaries or log excerpts before sending bug reports.</li>
           <li>You can disable automatic update checks in the Sparkle update preferences.</li>
-          <li>You can use DisplayHelperPro without activating a license, with a reminder.</li>
+          <li>You can use Pro display controls during the trial without activating a license.</li>
           <li>You can deactivate this Mac from the license window.</li>
           <li>You can remove local app preferences using normal macOS preference-management tools.</li>
         </ul>
