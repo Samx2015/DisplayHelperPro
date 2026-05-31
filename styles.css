@@ -14,6 +14,8 @@
   --gold: #f0c96e;
   --green: #8ed39d;
   --shadow: 0 22px 54px rgba(0, 0, 0, 0.42);
+  --wide-max: 76rem;
+  --frame-max: 86rem;
 }
 
 * {
@@ -64,6 +66,13 @@ select {
   gap: 1.2rem;
   padding: 1.1rem clamp(1rem, 4vw, 4rem);
   color: #ffffff;
+}
+
+body:not(.policy-page) .site-header {
+  left: 50%;
+  right: auto;
+  width: min(100%, var(--frame-max));
+  transform: translateX(-50%);
 }
 
 .brand {
@@ -129,6 +138,7 @@ select {
   isolation: isolate;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 7rem clamp(1.15rem, 5vw, 5rem) 5rem;
   color: #ffffff;
 }
@@ -155,8 +165,13 @@ select {
 }
 
 .hero-content {
-  max-width: 45rem;
+  flex: 0 1 var(--wide-max);
+  max-width: var(--wide-max);
   padding-top: 2rem;
+}
+
+.hero-content > * {
+  max-width: 45rem;
 }
 
 .eyebrow,
@@ -284,21 +299,30 @@ p {
 }
 
 .signal-strip {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0;
   background: var(--line);
   border-bottom: 1px solid var(--line);
 }
 
-.signal-strip div {
+.signal-inner {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  width: min(100%, var(--wide-max));
+  margin-inline: auto;
+}
+
+.signal-inner > div {
   min-height: 7.2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 1.2rem clamp(1.15rem, 4vw, 4rem);
+  padding: 1.2rem clamp(1.15rem, 2.6vw, 2.25rem);
   border-right: 1px solid var(--line);
   background: var(--panel);
+}
+
+.signal-inner > div:last-child {
+  border-right: 0;
 }
 
 .signal-strip strong {
@@ -315,6 +339,24 @@ p {
 
 .section {
   padding: 6.5rem clamp(1.15rem, 5vw, 5rem);
+}
+
+.section > .section-kicker,
+.section > h2,
+.section > .split,
+.section > .feature-grid,
+.section > .controls-layout,
+.section > .detail-grid,
+.section > .license-layout,
+.section > .install-layout,
+.section > .download-card,
+.section > .release-checks,
+.section > .release-note,
+.section > .trust-grid,
+.demo-band > .section-kicker,
+.demo-band > .demo-layout {
+  width: min(100%, var(--wide-max));
+  margin-inline: auto;
 }
 
 .split,
@@ -832,15 +874,20 @@ body[data-demo-mode="disabled"] .status-dot {
 }
 
 .truth-band {
-  display: grid;
-  grid-template-columns: minmax(18rem, 0.8fr) minmax(20rem, 1fr);
-  gap: clamp(1.5rem, 5vw, 5rem);
-  align-items: start;
   padding: 5rem clamp(1.15rem, 5vw, 5rem);
   color: #ffffff;
   background:
     linear-gradient(135deg, rgba(255, 111, 89, 0.16), transparent 35%),
     var(--charcoal);
+}
+
+.truth-inner {
+  display: grid;
+  grid-template-columns: minmax(18rem, 0.8fr) minmax(20rem, 1fr);
+  gap: clamp(1.5rem, 5vw, 5rem);
+  align-items: start;
+  width: min(100%, var(--wide-max));
+  margin-inline: auto;
 }
 
 .truth-band h2 {
@@ -1345,13 +1392,13 @@ body[data-demo-mode="disabled"] .status-dot {
   .controls-layout,
   .detail-grid,
   .license-layout,
-  .truth-band,
+  .truth-inner,
   .policy-shell {
     grid-template-columns: 1fr;
   }
 
   .feature-grid,
-  .signal-strip,
+  .signal-inner,
   .trust-grid,
   .release-checks,
   .edition-table,
@@ -1435,7 +1482,7 @@ body[data-demo-mode="disabled"] .status-dot {
     gap: 0.35rem;
   }
 
-  .signal-strip div {
+  .signal-inner > div {
     min-height: 5.8rem;
     padding: 1rem;
   }
