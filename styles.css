@@ -1069,6 +1069,76 @@ body[data-demo-mode="disabled"] .status-dot {
   font-size: 0.95rem;
 }
 
+.compact-page .site-nav {
+  grid-column: 2;
+}
+
+.compact-hero {
+  min-height: 66svh;
+}
+
+.compact-page .hero-copy {
+  max-width: 43rem;
+}
+
+.compact-section {
+  padding-block: clamp(3rem, 4.2vw, 3.8rem);
+}
+
+.compact-split {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(20rem, 1fr);
+  gap: clamp(1.5rem, 4vw, 3.6rem);
+  align-items: start;
+  width: min(100%, var(--wide-max));
+  margin-inline: auto;
+}
+
+.compact-split p {
+  max-width: 43rem;
+}
+
+.compact-status-grid {
+  display: grid;
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--line);
+}
+
+.compact-status-grid article {
+  min-height: 5.2rem;
+  padding: 1rem;
+  background: var(--panel);
+}
+
+.compact-status-grid strong,
+.compact-status-grid span {
+  display: block;
+}
+
+.compact-status-grid strong {
+  margin-bottom: 0.35rem;
+  color: var(--teal);
+  font-weight: 320;
+}
+
+.compact-status-grid span {
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.compact-truth .truth-inner,
+.compact-release > .download-card {
+  width: min(100%, var(--wide-max));
+  margin-inline: auto;
+}
+
+.compact-steps li {
+  grid-template-columns: 3.5rem minmax(0, 1fr);
+}
+
 .site-footer {
   display: flex;
   flex-wrap: wrap;
@@ -1321,6 +1391,7 @@ body[data-demo-mode="disabled"] .status-dot {
   .controls-layout,
   .detail-grid,
   .license-layout,
+  .compact-split,
   .truth-inner,
   .policy-shell {
     grid-template-columns: 1fr;
@@ -1390,6 +1461,14 @@ body[data-demo-mode="disabled"] .status-dot {
   .section,
   .demo-band,
   .policy-shell {
+    padding: 3rem 1rem;
+  }
+
+  .compact-hero {
+    min-height: 70svh;
+  }
+
+  .compact-section {
     padding: 3rem 1rem;
   }
 
