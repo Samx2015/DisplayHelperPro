@@ -12,25 +12,24 @@
     <link rel="preload" href="assets/hero-display.png" as="image">
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body class="compact-page">
     <header class="site-header" aria-label="Primary">
       <a class="brand" href="index.html" aria-label="DisplayHelperPro home">
         <img src="assets/icon.svg" alt="" width="34" height="34">
         <span>DisplayHelperPro</span>
       </a>
       <nav class="site-nav" aria-label="Page sections">
-        <a href="#how-it-works">How It Works</a>
-        <a href="#features">Features</a>
-        <a href="#controls">Controls</a>
+        <a href="#how">How It Works</a>
+        <a href="#menu">Menu</a>
+        <a href="#pro">Why Pro</a>
+        <a href="#privacy">Privacy</a>
         <a href="https://samx2015.github.io/DisplayHelper/">All Editions</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="#release">Release</a>
       </nav>
       <a class="header-cta" href="#release">Download</a>
     </header>
 
     <main id="top">
-      <section class="hero" aria-labelledby="hero-title">
+      <section class="hero compact-hero" aria-labelledby="hero-title">
         <img
           class="hero-image"
           src="assets/hero-display.png"
@@ -41,179 +40,70 @@
           <p class="eyebrow">Privacy-first Mac menu-bar app</p>
           <h1 id="hero-title">DisplayHelperPro</h1>
           <p class="hero-copy">
-            Keep your mirrored MacBook screen dark, switch built-in-to-external mirroring from the
-            menu bar, and tune display brightness or contrast without giving up a local-first workflow.
+            Keep your mirrored MacBook screen dark, switch mirroring from the menu bar,
+            and tune brightness or contrast without adding accounts, analytics, or a Dock window.
           </p>
-          <div class="trust-pills" aria-label="Privacy and compatibility highlights">
-            <span>No data collection</span>
-            <span>Menu-bar only</span>
-            <span>Mirroring-aware</span>
-            <span>Brightness controls</span>
+          <div class="trust-pills" aria-label="Highlights">
+            <span>Mirroring-aware blackout</span>
+            <span>Real menu controls</span>
+            <span>Direct-download Pro</span>
+            <span>Local-first privacy</span>
           </div>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button button-primary" href="#release">
               <span class="button-glyph" aria-hidden="true"></span>
               Download for Mac
             </a>
-            <a class="button button-secondary" href="#controls">See Controls</a>
+            <a class="button button-secondary" href="#menu">See Menu</a>
           </div>
         </div>
       </section>
 
-      <section class="signal-strip" aria-label="Key product qualities">
-        <div class="signal-inner">
+      <section class="section compact-section" id="how" aria-labelledby="how-title">
+        <div class="section-kicker">How Pro works</div>
+        <div class="compact-split">
           <div>
-            <strong>No data collection</strong>
-            <span>no analytics, tracking, account, or automatic reporting</span>
-          </div>
-          <div>
-            <strong>Mirroring control</strong>
-            <span>remembers your preferred external display when available</span>
-          </div>
-          <div>
-            <strong>Display adjustment</strong>
-            <span>brightness and contrast controls with hardware and software paths</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section intro-section" id="how-it-works">
-        <div class="section-kicker">How it works</div>
-        <div class="split">
-          <div>
-            <h2>Darken the MacBook screen only when it is duplicating another display.</h2>
+            <h2 id="how-title">Darken the MacBook screen only when it is mirroring.</h2>
             <p>
-              DisplayHelperPro is made for desks, demos, and presentation setups where the built-in
-              screen keeps glowing even though the external display is the one you are actually using.
-              It can also toggle built-in-to-external mirroring for you and reuse the last external
-              display you selected.
+              DisplayHelperPro watches your display setup, keeps extended workspaces available,
+              and reapplies blackout after wake or display changes only when the built-in panel is
+              duplicating another display.
             </p>
           </div>
-          <div class="rule-block" aria-label="Display behavior">
-            <div class="rule-row rule-on">
-              <span>Mirror</span>
-              <strong>MacBook screen duplicates the external display</strong>
-              <em>built-in screen goes dark</em>
-            </div>
-            <div class="rule-row">
-              <span>Extend</span>
-              <strong>MacBook screen is part of your workspace</strong>
-              <em>screen stays available</em>
-            </div>
+          <div class="compact-status-grid" aria-label="Display states">
+            <article>
+              <strong>Mirror</strong>
+              <span>built-in screen goes dark while the external display stays active</span>
+            </article>
+            <article>
+              <strong>Extend</strong>
+              <span>the MacBook screen stays available as part of your workspace</span>
+            </article>
+            <article>
+              <strong>Away</strong>
+              <span>dim displays until the next key press, then restore them</span>
+            </article>
           </div>
         </div>
       </section>
 
-      <section class="demo-band" id="demo" aria-labelledby="demo-title">
-        <div class="section-kicker">Interactive preview</div>
-        <div class="demo-layout">
-          <div class="rig" aria-label="Display behavior illustration">
-            <div class="external-monitor">
-              <div class="monitor-menu">
-                <span></span><span></span><span></span>
-              </div>
-              <div class="window-stack">
-                <div></div>
-                <div></div>
-              </div>
-              <div class="wallpaper-wave"></div>
-            </div>
-            <div class="laptop">
-              <div class="laptop-screen" aria-hidden="true">
-                <div class="laptop-menu"></div>
-                <div class="mini-window"></div>
-              </div>
-              <div class="laptop-base"></div>
-            </div>
-          </div>
-
-          <div class="demo-panel">
-            <h2 id="demo-title">Smart enough to know the difference.</h2>
-            <p>
-              Plugging in a monitor should not mean losing your MacBook screen. The app keeps extended
-              workspaces available, watches for display changes, and reapplies blackout after wake
-              only when the built-in panel is mirroring another display.
-            </p>
-            <div class="segmented" role="group" aria-label="Choose display state">
-              <button class="segment is-active" type="button" data-mode="mirror">Mirroring</button>
-              <button class="segment" type="button" data-mode="extend">Extended</button>
-              <button class="segment" type="button" data-mode="disabled">Disabled</button>
-            </div>
-            <div class="status-readout" aria-live="polite">
-              <span class="status-dot" aria-hidden="true"></span>
-              <div>
-                <strong id="status-title">Built-in display darkened</strong>
-                <span id="status-detail">your MacBook screen is duplicating the external display</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section feature-section" id="features" aria-labelledby="features-title">
-        <div class="section-kicker">Latest Pro features</div>
-        <h2 id="features-title">A menu-bar display toolkit for mirrored MacBook setups.</h2>
-        <div class="feature-grid">
-          <article>
-            <span class="feature-mark">01</span>
-            <h3>Mirroring Only</h3>
-            <p>Darkens the built-in panel when it is duplicating your external screen.</p>
-          </article>
-          <article>
-            <span class="feature-mark">02</span>
-            <h3>One-Click Mirroring</h3>
-            <p>Toggle built-in-to-external mirroring and prefer the last external display.</p>
-          </article>
-          <article>
-            <span class="feature-mark">03</span>
-            <h3>Brightness &amp; Contrast</h3>
-            <p>Adjust the active display from the menu, using hardware controls where available.</p>
-          </article>
-          <article>
-            <span class="feature-mark">04</span>
-            <h3>Temporary Dim</h3>
-            <p>Dim displays until the next key press, then restore without sending that key to apps.</p>
-          </article>
-          <article>
-            <span class="feature-mark">05</span>
-            <h3>Wake Recovery</h3>
-            <p>Rechecks after sleep, screens wake, display changes, and mirroring transitions.</p>
-          </article>
-          <article>
-            <span class="feature-mark">06</span>
-            <h3>Keyboard Shortcuts</h3>
-            <p>Assign global shortcuts for common actions such as dimming or sleep.</p>
-          </article>
-          <article>
-            <span class="feature-mark">07</span>
-            <h3>Start at Login</h3>
-            <p>Set it once and let the app be ready when you sign in.</p>
-          </article>
-          <article>
-            <span class="feature-mark">08</span>
-            <h3>Private Feedback</h3>
-            <p>Open email drafts for bugs, features, and feedback with reviewable diagnostic context.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section controls-section" id="controls" aria-labelledby="controls-title">
-        <div class="section-kicker">Menu-bar controls</div>
+      <section class="section controls-section compact-section" id="menu" aria-labelledby="menu-title">
+        <div class="section-kicker">Menu controls</div>
         <div class="controls-layout">
           <div>
-            <h2 id="controls-title">Everything important is one click from the menu bar.</h2>
+            <h2 id="menu-title">Everything important is in the status menu.</h2>
             <p>
-              DisplayHelperPro has no Dock window. The status menu combines mirroring, blackout,
-              temporary dimming, display adjustment, shortcuts, updates, licensing, and support tools
-              in one compact control surface.
+              The real Pro menu combines blackout, one-click mirroring, temporary dimming, sleep,
+              theme control, shortcuts, brightness and contrast, login startup, updates, licensing,
+              feedback, privacy, and quit controls.
             </p>
-            <div class="control-highlights" aria-label="Control highlights">
+            <div class="control-highlights" aria-label="Menu highlights">
               <span>Enable Auto Blackout</span>
               <span>Mirror Built-in to External Display</span>
               <span>Dim Displays Until Key Press</span>
               <span>Brightness and Contrast sliders</span>
-              <span>Keyboard Shortcut...</span>
-              <span>Check for Updates...</span>
+              <span>Start at Login</span>
+              <span>License management</span>
             </div>
           </div>
           <figure class="menu-screenshot">
@@ -223,125 +113,64 @@
               height="1046"
               loading="lazy"
               decoding="async"
-              alt="DisplayHelperPro menu showing auto blackout, mirroring, dimming, sleep, theme, shortcuts, brightness, contrast, start at login, updates, license, feedback, privacy, and quit controls."
+              alt="DisplayHelperPro menu showing blackout, mirroring, dimming, sleep, theme, shortcuts, brightness, contrast, login, updates, license, feedback, privacy, and quit controls."
             >
           </figure>
         </div>
       </section>
 
-      <section class="section detail-section" aria-labelledby="display-controls-title">
-        <div class="section-kicker">Display adjustment</div>
-        <div class="detail-grid">
+      <section class="section compact-section" id="pro" aria-labelledby="pro-title">
+        <div class="section-kicker">Why Pro is direct-download</div>
+        <div class="compact-split">
           <div>
-            <h2 id="display-controls-title">Pro uses deeper display-control paths than the App Store edition.</h2>
+            <h2 id="pro-title">Deeper display controls, Sparkle updates, and a Pro license.</h2>
             <p>
-              The Pro build is distributed directly so it can use macOS display brightness APIs that
-              are not suitable for App Store submission. For external displays, it tries DDC/CI
-              hardware brightness and contrast controls when the monitor supports them, then falls
-              back to software gamma adjustment when needed.
+              The direct-download build can use macOS display brightness APIs that are not suitable
+              for App Store submission. External displays use DDC/CI hardware controls when
+              supported, with software gamma adjustment as a fallback.
             </p>
           </div>
-          <div class="capability-list" aria-label="Display control capabilities">
+          <div class="capability-list" aria-label="Pro capabilities">
             <article>
-              <strong>Built-in blackout</strong>
-              <span>Darkens the MacBook panel when CoreGraphics reports it is mirroring another display.</span>
+              <strong>Display backend</strong>
+              <span>private brightness APIs, DDC/CI where available, and gamma fallback</span>
             </article>
             <article>
-              <strong>External controls</strong>
-              <span>Uses monitor hardware controls for brightness and contrast where available.</span>
+              <strong>Distribution</strong>
+              <span>Developer ID signed, notarized, and updated through Sparkle</span>
             </article>
             <article>
-              <strong>Software fallback</strong>
-              <span>Uses display transfer tables when hardware controls are unavailable or ineffective.</span>
+              <strong>License</strong>
+              <span>14-day full-feature trial with local Keychain-backed license state</span>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="truth-band" id="privacy" aria-labelledby="privacy-title">
+      <section class="truth-band compact-truth" id="privacy" aria-labelledby="privacy-title">
         <div class="truth-inner">
           <div>
-            <p class="section-kicker">Privacy &amp; safety</p>
-            <h2 id="privacy-title">No data collection. No analytics. No tracking.</h2>
+            <p class="section-kicker">Privacy</p>
+            <h2 id="privacy-title">No account. No analytics. Review before sending.</h2>
           </div>
           <p>
-            DisplayHelperPro's display-management features run locally on your Mac. The app does not
-            collect, store, sell, share, or transmit personal information through display management.
-            Update checks contact the Sparkle feed, license actions contact Lemon Squeezy, and feedback
-            items open an email draft that you review before sending.
+            Display management runs locally. The app does not collect, sell, share, or transmit
+            personal information through normal display controls. Update checks contact Sparkle,
+            license actions contact Lemon Squeezy, and feedback opens a reviewable email draft.
           </p>
           <a class="text-link" href="privacy.html">Read the full privacy policy</a>
         </div>
       </section>
 
-      <section class="section license-section" aria-labelledby="license-title">
-        <div class="section-kicker">Trial &amp; license</div>
-        <div class="license-layout">
+      <section class="section compact-section compact-release" id="release" aria-labelledby="release-title">
+        <div class="section-kicker">Download, trial, and license</div>
+        <div class="compact-split">
           <div>
-            <h2 id="license-title">Full Pro controls during the trial, then a local license check.</h2>
+            <h2 id="release-title">Download the current notarized universal DMG.</h2>
             <p>
-              The latest Pro source includes a 14-day full-feature trial, Lemon Squeezy license
-              activation, validation, and deactivation, plus a 7-day offline grace period after a
-              successful validation.
-            </p>
-          </div>
-          <div class="license-card">
-            <strong>License data stays small and local.</strong>
-            <span>The license key and local license instance are stored in Keychain. Trial and validation timestamps are stored locally so Pro can work through ordinary offline use.</span>
-          </div>
-        </div>
-      </section>
-
-      <section class="section edition-section" aria-labelledby="edition-title">
-        <div class="section-kicker">Edition</div>
-        <div class="split">
-          <div>
-            <h2 id="edition-title">DisplayHelperPro is the direct-download edition.</h2>
-            <p>
-              DisplayHelperPro is distributed directly by Xintech LLC with Sparkle updates. The
-              Mac App Store edition is listed separately as DisplayHelper and uses App
-              Store-compatible behavior.
-            </p>
-          </div>
-          <div class="edition-table" aria-label="Edition comparison">
-            <div><strong>Pro</strong><span>Direct download</span><span>Sparkle updates</span><span>Private brightness backend</span><span>License and trial</span></div>
-            <div><strong>App Store</strong><span>Mac App Store</span><span>Store updates</span><span>App Store-compatible blackout</span><span><a href="https://samx2015.github.io/DisplayHelper/app-store.html">View Store edition</a></span></div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section trust-section" aria-labelledby="trust-title">
-        <div class="section-kicker">What customers should know</div>
-        <h2 id="trust-title">A small utility with a deliberately small footprint.</h2>
-        <div class="trust-grid">
-          <article>
-            <strong>No DisplayHelperPro account</strong>
-            <span>The app does not require a product account or cloud profile.</span>
-          </article>
-          <article>
-            <strong>No analytics</strong>
-            <span>The app does not track usage, events, clicks, sessions, or installs.</span>
-          </article>
-          <article>
-            <strong>Reviewable diagnostics</strong>
-            <span>Bug reports open as email drafts with bounded app-authored logs you can edit or remove.</span>
-          </article>
-          <article>
-            <strong>Local settings</strong>
-            <span>Preferences, remembered display identifiers, shortcuts, and license state stay on your Mac.</span>
-          </article>
-        </div>
-      </section>
-
-      <section class="section install-section" id="release" aria-labelledby="release-title">
-        <div class="section-kicker">Release</div>
-        <div class="install-layout">
-          <div>
-            <h2 id="release-title">Download the current public notarized release.</h2>
-            <p>
-              DisplayHelperPro is distributed as a Developer ID signed and notarized universal DMG.
-              The release package includes one app binary for Apple Silicon and Intel Macs, with
-              Sparkle configured for future direct-download updates.
+              Version 1.1.1, build 3 includes a universal Apple Silicon and Intel app binary.
+              The trial is full-featured for 14 days, followed by license activation and a 7-day
+              offline grace period after successful validation.
             </p>
             <div class="compatibility-list" aria-label="Compatibility">
               <span>macOS 13.0 or later</span>
@@ -349,29 +178,25 @@
               <span>MacBook built-in display required</span>
             </div>
           </div>
-          <ol class="steps">
+          <ol class="steps compact-steps">
             <li>
               <strong>1</strong>
-              <span>Download the notarized universal DMG.</span>
+              <span>Download the notarized DMG.</span>
             </li>
             <li>
               <strong>2</strong>
-              <span>Open the DMG.</span>
-            </li>
-            <li>
-              <strong>3</strong>
               <span>Drag DisplayHelperPro.app to Applications.</span>
             </li>
             <li>
-              <strong>4</strong>
-              <span>Open DisplayHelperPro from Applications.</span>
+              <strong>3</strong>
+              <span>Open the app and use the full Pro trial.</span>
             </li>
           </ol>
         </div>
         <div class="download-card" aria-label="Download call to action">
           <div>
             <strong>DisplayHelperPro for macOS</strong>
-            <span>Version 1.1.1, build 3. Developer ID signed and notarized.</span>
+            <span>Developer ID signed and notarized. Includes install notes, license, privacy, and release notes.</span>
           </div>
           <div class="download-actions">
             <a class="button button-primary" href="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-build3-macOS.dmg">
@@ -383,19 +208,7 @@
             </a>
           </div>
         </div>
-        <div class="release-checks" aria-label="Release contents">
-          <span>Includes INSTALL.txt</span>
-          <span>Includes LICENSE</span>
-          <span>Includes PRIVACY.md</span>
-          <span>Includes RELEASE_NOTES.md</span>
-        </div>
-        <p class="release-note">
-          Compatibility note: Pro uses deeper macOS display-control behavior for direct distribution.
-          These capabilities may change after future macOS updates.
-        </p>
       </section>
     </main>
-
-    <script src="script.js"></script>
   </body>
 </html>
