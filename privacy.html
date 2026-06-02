@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DisplayHelperPro Privacy Policy</title>
+    <title>DisplayHelper Pro Privacy Policy</title>
     <meta
       name="description"
-      content="DisplayHelperPro's privacy policy for local display controls, update checks, feedback emails, diagnostics, and support contact."
+      content="DisplayHelper Pro's privacy policy for local display controls, optional Wi-Fi switching help, update checks, feedback emails, diagnostics, and support contact."
     >
     <style>
       :root {
@@ -136,11 +136,11 @@
   </head>
   <body>
     <header>
-      <h1>DisplayHelperPro Privacy Policy</h1>
-      <p class="effective-date">Effective date: May 30, 2026</p>
+      <h1>DisplayHelper Pro Privacy Policy</h1>
+      <p class="effective-date">Effective date: June 2, 2026</p>
       <p>
-        DisplayHelperPro is a local-first macOS menu-bar utility for controlling the built-in
-        display in mirrored Mac setups.
+        DisplayHelper Pro is a local-first macOS menu-bar utility for controlling the built-in
+        display in mirrored Mac setups and offering optional Wi-Fi switching assistance.
       </p>
     </header>
 
@@ -148,7 +148,7 @@
       <section class="summary" aria-label="Privacy highlights">
         <div>
           <strong>No app account</strong>
-          <span>No DisplayHelperPro sign-in or user profile.</span>
+          <span>No DisplayHelper Pro sign-in or user profile.</span>
         </div>
         <div>
           <strong>No analytics</strong>
@@ -158,18 +158,22 @@
           <strong>No automatic reports</strong>
           <span>Feedback opens an email draft. Nothing is sent unless you choose Send.</span>
         </div>
+        <div>
+          <strong>No Wi-Fi passwords</strong>
+          <span>Wi-Fi details are read locally. Passwords are not read or stored.</span>
+        </div>
       </section>
 
       <section>
         <h2>Data Collection</h2>
         <p>
-          DisplayHelperPro does not collect, store, sell, share, or transmit personal information
+          DisplayHelper Pro does not collect, store, sell, share, or transmit personal information
           through its display-management features. Xintech LLC does not receive information about
           your displays, settings, usage, or device from the app unless you intentionally send it
           through email support or activate a license.
         </p>
         <ul>
-          <li>No DisplayHelperPro account is required.</li>
+          <li>No DisplayHelper Pro account is required.</li>
           <li>No analytics, tracking SDKs, advertising SDKs, or crash-reporting SDKs are included.</li>
           <li>No background telemetry is sent to Xintech LLC.</li>
         </ul>
@@ -178,7 +182,7 @@
       <section>
         <h2>Local Data</h2>
         <p>
-          DisplayHelperPro may store a small amount of local preference data and a bounded local
+          DisplayHelper Pro may store a small amount of local preference data and a bounded local
           diagnostic log on your Mac. This is used only to make the app behave consistently between
           launches and to prepare bug-report drafts when you choose to report a bug.
         </p>
@@ -186,9 +190,10 @@
         <ul>
           <li>Whether automatic blackout is enabled or disabled.</li>
           <li>Whether built-in mirroring should be enabled on launch.</li>
-          <li>Custom keyboard shortcuts for DisplayHelperPro menu actions.</li>
+          <li>Custom keyboard shortcuts for DisplayHelper Pro menu actions.</li>
           <li>A local display identifier used to remember the preferred external display for mirroring.</li>
-          <li>A small bounded log of DisplayHelperPro diagnostic messages used for bug-report drafts.</li>
+          <li>Whether Auto Wi-Fi Switch is enabled and the local signal-strength threshold.</li>
+          <li>A small bounded log of DisplayHelper Pro diagnostic messages used for bug-report drafts.</li>
           <li>Trial start and trial-expired markers stored locally and in Keychain to manage trial access.</li>
           <li>A license key and Lemon Squeezy license instance identifier stored in your Mac's Keychain if you activate a license.</li>
           <li>Non-secret license timestamps, such as the last successful validation time, used for offline grace behavior.</li>
@@ -197,16 +202,37 @@
           The app uses macOS display APIs to inspect display layout, detect mirroring, adjust
           built-in display brightness, temporarily dim active displays when you choose "Dim Displays
           Until Key Press," manage Start at Login when you enable it, and restore a fixed safe
-          brightness value when needed. For temporary dimming, DisplayHelperPro checks whether a key
+          brightness value when needed. For temporary dimming, DisplayHelper Pro checks whether a key
           is pressed only so it can restore the displays; it does not record key names, typed text,
-          or keyboard history. DisplayHelperPro does not store your previous brightness.
+          or keyboard history. DisplayHelper Pro does not store your previous brightness.
+        </p>
+      </section>
+
+      <section>
+        <h2>Wi-Fi Status and Location Permission</h2>
+        <p>
+          The optional Wi-Fi helper uses macOS CoreWLAN APIs to show the current Wi-Fi network
+          name, router address (BSSID), signal strength percentage, and band. It may also scan for
+          visible remembered auto-join networks so it can show an alternative and, when Auto Wi-Fi
+          Switch is enabled, ask macOS to switch only under the configured signal conditions.
+        </p>
+        <p>
+          macOS may require Location permission before apps can access Wi-Fi network names and
+          router addresses. DisplayHelper Pro uses that permission only for local Wi-Fi details,
+          signal strength, scans, and switching assistance. It does not use location history,
+          precise location tracking, or background location reporting.
+        </p>
+        <p>
+          DisplayHelper Pro does not read, store, display, or transmit Wi-Fi passwords. When it
+          switches Wi-Fi, it asks macOS to join a remembered network without providing a password;
+          if macOS cannot join the network, the app leaves the network alone temporarily.
         </p>
       </section>
 
       <section>
         <h2>Network Activity</h2>
         <p>
-          DisplayHelperPro's normal display controls do not require a network connection. The app
+          DisplayHelper Pro's normal display controls do not require a network connection. The app
           may contact the public Sparkle update feed when automatic update checks are enabled or
           when you choose "Check for Updates..." from the menu.
         </p>
@@ -215,14 +241,14 @@
           used for advertising, analytics, account tracking, or usage tracking.
         </p>
         <p>
-          If you choose "Activate License...", DisplayHelperPro contacts Lemon Squeezy to activate,
+          If you choose "Activate License...", DisplayHelper Pro contacts Lemon Squeezy to activate,
           validate, or deactivate your license. License requests send your license key and an
           instance name based on your Mac's local computer name, such as "DisplayHelper Pro on
           Sam's Mac," so you can recognize and deactivate that Mac later.
         </p>
         <p>
           Lemon Squeezy may return license, product, order, and customer metadata needed to verify
-          the license. DisplayHelperPro stores only the license key, the local license instance
+          the license. DisplayHelper Pro stores only the license key, the local license instance
           identifier, local trial markers, and local validation timestamps. License requests are not
           used for analytics, advertising, or usage tracking.
         </p>
@@ -242,23 +268,25 @@
           if you send the email.
         </p>
         <p>
-          Bug report drafts also include a bounded excerpt of recent DisplayHelperPro diagnostic
-          logs. Feature request and general feedback drafts do not include logs.
+          Bug report drafts also include a bounded excerpt of recent DisplayHelper Pro diagnostic
+          logs. These logs may include local display state and Wi-Fi status details such as network
+          names, router addresses, signal strength, and switch attempts. Feature request and general
+          feedback drafts do not include logs.
         </p>
       </section>
 
       <section>
         <h2>Diagnostics and Logs</h2>
         <p>
-          DisplayHelperPro writes diagnostic messages to Apple's local unified logging system and
+          DisplayHelper Pro writes diagnostic messages to Apple's local unified logging system and
           keeps a small bounded app-local diagnostic log. These logs are stored locally on your Mac.
-          Choosing "Report a Bug..." collects a bounded DisplayHelperPro-only excerpt from the
+          Choosing "Report a Bug..." collects a bounded DisplayHelper Pro-only excerpt from the
           app-local log and inserts it into the email draft.
         </p>
         <p>
-          The log excerpt uses the last 20 minutes of DisplayHelperPro logs when available. If
+          The log excerpt uses the last 20 minutes of DisplayHelper Pro logs when available. If
           there are too few recent entries, the app may look back up to 24 hours and include the
-          most recent DisplayHelperPro entries, capped at 180 lines and 16,000 characters. Nothing
+          most recent DisplayHelper Pro entries, capped at 180 lines and 16,000 characters. Nothing
           is sent unless you choose Send, and you can delete the log excerpt first.
         </p>
       </section>
@@ -269,6 +297,8 @@
           <li>You can leave feedback drafts unsent, edit them, or delete diagnostic details.</li>
           <li>You can delete diagnostic summaries or log excerpts before sending bug reports.</li>
           <li>You can disable automatic update checks in the Sparkle update preferences.</li>
+          <li>You can turn Auto Wi-Fi Switch on or off from the app menu.</li>
+          <li>You can manage DisplayHelper Pro's Location permission in macOS System Settings.</li>
           <li>You can use Pro display controls during the trial without activating a license.</li>
           <li>You can deactivate this Mac from the license window.</li>
           <li>You can remove local app preferences using normal macOS preference-management tools.</li>
@@ -282,7 +312,7 @@
           <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.
         </p>
         <p>
-          Xintech LLC may update this policy if DisplayHelperPro's behavior changes. The effective
+          Xintech LLC may update this policy if DisplayHelper Pro's behavior changes. The effective
           date above will change when the policy changes.
         </p>
       </section>
