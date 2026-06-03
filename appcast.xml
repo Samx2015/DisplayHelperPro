@@ -53,7 +53,7 @@ may change in future macOS updates.
 
 Requires macOS 13.0 or later.
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-build3-modern-macOS.dmg" length="4034260" type="application/octet-stream" sparkle:edSignature="IQjPy8QL7ZLR1tO23nRLrp/dD9r+nSQBRT7xKS98ckSMQdTGKz7k8K3cmIE4uBT1wr9IWGk3vrU15t+JWhOZCQ=="/>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="4034260" type="application/octet-stream" sparkle:edSignature="IQjPy8QL7ZLR1tO23nRLrp/dD9r+nSQBRT7xKS98ckSMQdTGKz7k8K3cmIE4uBT1wr9IWGk3vrU15t+JWhOZCQ=="/>
         </item>
     </channel>
 </rss>
