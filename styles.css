@@ -780,26 +780,6 @@ body[data-demo-mode="disabled"] .status-dot {
   max-width: 44rem;
 }
 
-.control-highlights {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1.1rem;
-}
-
-.control-highlights span {
-  min-height: 2.2rem;
-  display: inline-flex;
-  align-items: center;
-  padding: 0 0.78rem;
-  border: 1px solid rgba(128, 242, 234, 0.22);
-  border-radius: 999px;
-  color: var(--teal);
-  background: rgba(128, 242, 234, 0.08);
-  font-size: 0.88rem;
-  font-weight: 320;
-}
-
 .menu-screenshot {
   width: min(100%, 27rem);
   margin: 0;
