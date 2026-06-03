@@ -6,7 +6,7 @@
     <title>DisplayHelper Pro Compact Test</title>
     <meta
       name="description"
-      content="A compact test layout for DisplayHelper Pro, combining display controls, Wi-Fi helper details, privacy, and download information into a shorter page."
+      content="A compact test layout for DisplayHelper Pro, combining display controls, threshold-based Wi-Fi helper details, privacy, and download information into a shorter page."
     >
     <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
     <link rel="preload" href="assets/hero-display.png" as="image">
@@ -41,8 +41,8 @@
           <h1 id="hero-title">DisplayHelper Pro</h1>
           <p class="hero-copy">
             Keep your mirrored MacBook screen dark, switch mirroring from the menu bar,
-            tune brightness or contrast, and watch Wi-Fi alternatives without adding accounts,
-            analytics, or a Dock window.
+            tune brightness or contrast, and watch BSSID-aware Wi-Fi alternatives without
+            adding accounts, analytics, or a Dock window.
           </p>
           <div class="trust-pills" aria-label="Highlights">
             <span>Mirroring-aware blackout</span>
@@ -96,27 +96,27 @@
             <h2 id="menu-title">Everything important is in the status menu.</h2>
             <p>
               The real Pro menu combines blackout, one-click mirroring, temporary dimming, sleep,
-              theme control, shortcuts, brightness and contrast, current and alternative Wi-Fi
-              status, optional auto Wi-Fi switching, login startup, updates, licensing, feedback,
-              privacy, and quit controls.
+              theme control, shortcuts, brightness and contrast, color-coded current and
+              alternative Wi-Fi status, threshold-based auto Wi-Fi switching, login startup,
+              updates, licensing, feedback, privacy, and quit controls.
             </p>
             <div class="control-highlights" aria-label="Menu highlights">
               <span>Enable Auto Blackout</span>
               <span>Mirror Built-in to External Display</span>
               <span>Dim Displays Until Key Press</span>
               <span>Brightness and Contrast sliders</span>
-              <span>Auto Wi-Fi Switch</span>
-              <span>Current and Alternative Wi-Fi</span>
+              <span>Threshold-based Auto Wi-Fi Switch</span>
+              <span>Color-coded Wi-Fi alternatives</span>
             </div>
           </div>
           <figure class="menu-screenshot">
             <img
               src="assets/displayhelperpro-menu.png"
-              width="728"
-              height="1046"
+              width="1010"
+              height="1316"
               loading="lazy"
               decoding="async"
-              alt="DisplayHelper Pro menu showing blackout, mirroring, dimming, sleep, theme, shortcuts, brightness, contrast, login, updates, license, feedback, privacy, and quit controls."
+              alt="DisplayHelper Pro menu showing blackout, mirroring, dimming, sleep, theme, shortcuts, brightness, contrast, auto Wi-Fi switch threshold, current and alternative Wi-Fi rows, login, updates, license, feedback, privacy, and quit controls."
             >
           </figure>
         </div>
@@ -131,7 +131,8 @@
               The direct-download build can use macOS display brightness APIs that are not suitable
               for App Store submission. External displays use DDC/CI hardware controls when
               supported, with software gamma adjustment as a fallback. The Wi-Fi helper uses local
-              CoreWLAN status, BSSID-aware alternatives, and throttled scans for cautious switching.
+              CoreWLAN status, BSSID-aware alternatives, throttled scans, and a configurable
+              signal threshold for cautious automatic switching.
             </p>
           </div>
           <div class="capability-list" aria-label="Pro capabilities">
@@ -145,7 +146,7 @@
             </article>
             <article>
               <strong>Wi-Fi helper</strong>
-              <span>current-strength polling, BSSID-aware alternatives, and optional auto-switch</span>
+              <span>current-strength polling, BSSID-aware alternatives, and threshold-based auto-switch</span>
             </article>
             <article>
               <strong>License</strong>
@@ -164,8 +165,9 @@
           <p>
             Display management runs locally. The app does not collect, sell, share, or transmit
             personal information through normal display controls. Wi-Fi support reads local network
-            status and does not read or store Wi-Fi passwords. Update checks contact Sparkle,
-            license actions contact Lemon Squeezy, and feedback opens a reviewable email draft.
+            status, shows current and alternative access points, and does not read or store Wi-Fi
+            passwords. Update checks contact Sparkle, license actions contact Lemon Squeezy, and
+            feedback opens a reviewable email draft.
           </p>
           <a class="text-link" href="privacy.html">Read the full privacy policy</a>
         </div>
@@ -175,11 +177,11 @@
         <div class="section-kicker">Download, trial, and license</div>
         <div class="compact-split">
           <div>
-            <h2 id="release-title">Download the current notarized universal DMG.</h2>
+            <h2 id="release-title">Download the notarized universal DMG.</h2>
             <p>
-              Version 1.1.1, build 3 includes a universal Apple Silicon and Intel app binary.
-              The trial is full-featured for 14 days, followed by license activation and a 7-day
-              offline grace period after successful validation.
+              Version 1.1.1 includes a universal Apple Silicon and Intel app binary. The trial is
+              full-featured for 14 days, followed by license activation and a 7-day offline grace
+              period after successful validation.
             </p>
             <div class="compatibility-list" aria-label="Compatibility">
               <span>macOS 13.0 or later</span>
