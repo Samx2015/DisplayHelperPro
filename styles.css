@@ -125,6 +125,7 @@ body:not(.policy-page) .site-header {
 
 .header-cta {
   justify-self: end;
+  gap: 0.65rem;
   padding: 0 1.05rem;
   border: 1px solid rgba(255, 139, 115, 0.7);
   background: var(--coral);
@@ -765,6 +766,11 @@ body[data-demo-mode="disabled"] .status-dot {
 .detail-grid p,
 .license-layout p {
   max-width: 44rem;
+}
+
+#what .controls-layout > div:first-child {
+  align-self: center;
+  transform: translateY(-1.2rem);
 }
 
 .menu-screenshot {
@@ -1430,6 +1436,11 @@ body[data-demo-mode="disabled"] .status-dot {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     padding-left: 0;
     border-left: 0;
+  }
+
+  #what .controls-layout > div:first-child {
+    align-self: start;
+    transform: none;
   }
 }
 
