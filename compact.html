@@ -8,14 +8,14 @@
       name="description"
       content="DisplayHelper Pro keeps the built-in MacBook display dark while mirroring, adds menu-bar display controls, and can automatically switch to stronger Wi-Fi."
     >
-    <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/app-icon.png" type="image/png">
     <link rel="preload" href="assets/hero-display.png" as="image">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20260602-hero">
   </head>
   <body class="compact-page">
     <header class="site-header" aria-label="Primary">
       <a class="brand" href="index.html" aria-label="DisplayHelper Pro home">
-        <img src="assets/icon.svg" alt="" width="34" height="34">
+        <img src="assets/app-icon.png" alt="" width="34" height="34">
         <span>DisplayHelper Pro</span>
       </a>
       <nav class="site-nav" aria-label="Page sections">
@@ -40,17 +40,22 @@
         <div class="hero-content">
           <p class="eyebrow">Mac menu-bar display helper</p>
           <h1 id="hero-title">DisplayHelper Pro</h1>
-          <p class="hero-copy">
-            Keep the built-in MacBook display dark while mirroring to an external
-            monitor. Control the things you actually use from the menu bar, without
-            a Dock window. Optionally switch to stronger Wi-Fi when the current
-            signal gets weak.
-          </p>
+          <div class="hero-summary" aria-label="DisplayHelper Pro summary">
+            <div>
+              <strong>Blackout</strong>
+              <span>Keep the built-in MacBook display dark while mirroring to an external monitor.</span>
+            </div>
+            <div>
+              <strong>Controls</strong>
+              <span>Mirror, dim, sleep, brightness, and contrast from the menu bar.</span>
+            </div>
+            <div>
+              <strong>Wi-Fi</strong>
+              <span>Optionally switch to stronger Wi-Fi when the current signal gets weak.</span>
+            </div>
+          </div>
           <div class="trust-pills" aria-label="Highlights">
-            <span>Mirror-only blackout</span>
-            <span>Menu-bar controls</span>
-            <span>Brightness + contrast</span>
-            <span>Automatically switch to stronger Wi-Fi</span>
+            <span>No Dock window</span>
             <span>No analytics</span>
             <span>14-day trial</span>
           </div>
@@ -169,7 +174,7 @@
         </div>
         <div class="download-card" aria-label="Download call to action">
           <div>
-            <strong>Developer signed and Apple-notarized.</strong>
+            <strong>Developer signed and Apple notarized.</strong>
           </div>
           <div class="download-actions">
             <a class="button button-primary" href="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-build3-macOS.dmg">
