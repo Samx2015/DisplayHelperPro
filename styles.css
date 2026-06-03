@@ -226,6 +226,54 @@ p {
   line-height: 1.7;
 }
 
+.copy-points {
+  display: grid;
+  gap: 0.55rem;
+  max-width: 44rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.copy-points li {
+  display: grid;
+  grid-template-columns: minmax(8.5rem, 0.34fr) minmax(0, 1fr);
+  gap: 0.85rem;
+  align-items: start;
+  padding-block: 0.55rem;
+  border-bottom: 1px solid rgba(128, 242, 234, 0.14);
+}
+
+.copy-points li:first-child {
+  padding-top: 0;
+}
+
+.copy-points strong {
+  color: var(--ink);
+  font-weight: 320;
+}
+
+.copy-points span {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.privacy-points {
+  max-width: none;
+}
+
+.truth-band .copy-points li {
+  border-bottom-color: rgba(255, 255, 255, 0.16);
+}
+
+.truth-band .copy-points strong {
+  color: #ffffff;
+}
+
+.truth-band .copy-points span {
+  color: rgba(255, 255, 255, 0.76);
+}
+
 .hero-copy {
   max-width: 42rem;
   color: rgba(255, 255, 255, 0.84);
@@ -1456,6 +1504,11 @@ body[data-demo-mode="disabled"] .status-dot {
   p,
   .hero-copy {
     font-size: 1rem;
+  }
+
+  .copy-points li {
+    grid-template-columns: 1fr;
+    gap: 0.22rem;
   }
 
   .section,
