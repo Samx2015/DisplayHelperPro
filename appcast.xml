@@ -7,9 +7,9 @@
         <language>en</language>
         <item>
             <title>1.1.1</title>
-            <pubDate>Tue, 02 Jun 2026 23:41:19 -0700</pubDate>
+            <pubDate>Wed, 03 Jun 2026 02:20:48 -0700</pubDate>
             <link>https://samx2015.github.io/DisplayHelperPro/</link>
-            <sparkle:version>8</sparkle:version>
+            <sparkle:version>9</sparkle:version>
             <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[# DisplayHelperPro 1.1.1
@@ -24,6 +24,7 @@
   Wi-Fi passwords.
 - Avoids showing a Keychain permission prompt during launch if an older local
   build created the saved license item.
+- Fixes duplicate "You're up to date!" dialogs when checking for updates.
 - Refines the compact menu with About, feedback, privacy, license, and update
   actions.
 - Ships in a modern drag-to-Applications DMG.
@@ -43,7 +44,7 @@ may change in future macOS updates.
 
 Requires macOS 13.0 or later.
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="4668366" type="application/octet-stream" sparkle:edSignature="OYvX1LZAy5l4ir76RMS6dqLaRqPhZkVVshKsWkP/z+IoYHjtZhhfGekMVGWitcDR4yXB8wH1rNXKVjHkjmVBBg=="/>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="4675983" type="application/octet-stream" sparkle:edSignature="WN1Qu6BdMOafxkbmz2pW7v9vqe6mrQCcfviht41wteSyttugrT6urEvUhJq6jtKo0RRMNaMDIukf3egeGrwCAw=="/>
         </item>
     </channel>
 </rss>
