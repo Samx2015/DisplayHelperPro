@@ -7,9 +7,9 @@
         <language>en</language>
         <item>
             <title>1.1.1</title>
-            <pubDate>Wed, 03 Jun 2026 03:46:38 -0700</pubDate>
+            <pubDate>Wed, 03 Jun 2026 05:47:58 -0700</pubDate>
             <link>https://samx2015.github.io/DisplayHelperPro/</link>
-            <sparkle:version>12</sparkle:version>
+            <sparkle:version>13</sparkle:version>
             <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[# DisplayHelper Pro 1.1.1
@@ -27,6 +27,8 @@
 - Hides the saved license key in the Manage License window.
 - Validates licenses from the live DisplayHelper Pro Lemon Squeezy product.
 - Adds a Buy License button to the Manage License window.
+- Enables Start at Login by default on first launch while preserving later
+  user changes.
 - Fixes duplicate "You're up to date!" dialogs when checking for updates.
 - Uses `DisplayHelper Pro.app` as the installed app name.
 - Refines the compact menu with About, feedback, privacy, license, and update
@@ -48,7 +50,7 @@ may change in future macOS updates.
 
 Requires macOS 13.0 or later.
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="4677716" type="application/octet-stream" sparkle:edSignature="V595C4lpXnf6F0WjcKxIlOvWadD0qnIP8EQCpsqauPc8xtuzGlC3sJ4qLYDOHFb90EYoAHj4OZwx01KNYTfpBw=="/>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="4678645" type="application/octet-stream" sparkle:edSignature="A+J8lRDPME6hcCPgjba5vKM8/UvhbDfBt6iqa/YXtg01uBhi3VUe3KEgPMsNSXAzUY1p62RAf449MIgy/c8eDw=="/>
         </item>
     </channel>
 </rss>
