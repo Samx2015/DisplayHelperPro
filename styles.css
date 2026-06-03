@@ -106,9 +106,10 @@ body:not(.policy-page) .site-header {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 0.5rem;
   border-radius: 7px;
   font-size: 0.9rem;
-  font-weight: 240;
+  font-weight: 320;
 }
 
 .site-nav a {
@@ -124,10 +125,10 @@ body:not(.policy-page) .site-header {
 
 .header-cta {
   justify-self: end;
-  padding: 0 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  background: rgba(255, 255, 255, 0.12);
-  color: #ffffff;
+  padding: 0 1.05rem;
+  border: 1px solid rgba(255, 139, 115, 0.7);
+  background: var(--coral);
+  color: #190b07;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
 }
 
@@ -302,13 +303,6 @@ p {
   font-weight: 320;
 }
 
-.hero-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-  margin-top: 1.45rem;
-}
-
 .button {
   min-height: 3rem;
   display: inline-flex;
@@ -328,13 +322,6 @@ p {
 .button.is-disabled {
   cursor: not-allowed;
   opacity: 0.7;
-}
-
-.button-secondary {
-  border: 1px solid rgba(255, 255, 255, 0.28);
-  background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
-  backdrop-filter: blur(12px);
 }
 
 .button-glyph {
@@ -1456,6 +1443,12 @@ body[data-demo-mode="disabled"] .status-dot {
   }
 
   .header-cta {
+    min-height: 2.3rem;
+    padding: 0 0.72rem;
+    font-size: 0.82rem;
+  }
+
+  .header-cta .button-glyph {
     display: none;
   }
 
