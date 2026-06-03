@@ -7,36 +7,24 @@
         <language>en</language>
         <item>
             <title>1.1.1</title>
-            <pubDate>Wed, 27 May 2026 02:06:54 -0700</pubDate>
+            <pubDate>Tue, 02 Jun 2026 23:22:22 -0700</pubDate>
             <link>https://samx2015.github.io/DisplayHelperPro/</link>
-            <sparkle:version>3</sparkle:version>
+            <sparkle:version>7</sparkle:version>
             <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[# DisplayHelperPro 1.1.1
 
-## Product Naming
+## What's New
 
-- Renamed the direct-download build to `DisplayHelperPro`.
-- Kept the direct-download bundle identifier as `com.xintechll.DisplayHelper`
-  so existing local preferences and Sparkle identity remain continuous.
-- Kept the App Store build branded as `DisplayHelper`.
-- Updated the menu quit command to show the product name:
-  `Quit DisplayHelperPro`.
-
-## Software Updates
-
-- Added a "Check for Updates..." menu item to the Pro build.
-- Configured the Pro Sparkle feed at
-  `https://samx2015.github.io/DisplayHelperPro/appcast.xml`.
-- Prepared Sparkle update signing with the public EdDSA key.
-
-## Privacy & Feedback
-
-- Added feedback menu items for bug reports, feature requests, and general
-  feedback.
-- Bug report drafts include a bounded DisplayHelperPro diagnostic log excerpt
-  that the user can review and delete before sending.
-- Display-management features remain local and account-free.
+- Adds optional Auto Wi-Fi Switch for saved Wi-Fi networks, with a signal
+  threshold and conservative scans.
+- Shows current and alternative Wi-Fi network details in the menu using public
+  macOS Wi-Fi APIs.
+- Keeps Wi-Fi passwords out of scope; the app does not read, store, or send
+  Wi-Fi passwords.
+- Refines the compact menu with About, feedback, privacy, license, and update
+  actions.
+- Ships in a modern drag-to-Applications DMG.
 
 ## Install
 
@@ -53,7 +41,7 @@ may change in future macOS updates.
 
 Requires macOS 13.0 or later.
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="4034260" type="application/octet-stream" sparkle:edSignature="IQjPy8QL7ZLR1tO23nRLrp/dD9r+nSQBRT7xKS98ckSMQdTGKz7k8K3cmIE4uBT1wr9IWGk3vrU15t+JWhOZCQ=="/>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="4477913" type="application/octet-stream" sparkle:edSignature="NGaOom87N3f32om8GIGwTVKwCH/UsDJMQdoq5GjuED7PoHb5f2DJIFYwVYcaEBuZtra29egLxdkFPRYnOahdBA=="/>
         </item>
     </channel>
 </rss>

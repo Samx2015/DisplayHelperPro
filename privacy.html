@@ -6,7 +6,7 @@
     <title>DisplayHelper Pro Privacy Policy</title>
     <meta
       name="description"
-      content="DisplayHelper Pro's privacy policy for local display controls, update checks, feedback emails, diagnostics, licensing, and support contact."
+      content="DisplayHelper Pro's privacy policy for local display controls, optional Wi-Fi switching, update checks, feedback emails, diagnostics, licensing, and support contact."
     >
     <style>
       :root {
@@ -137,10 +137,11 @@
   <body>
     <header>
       <h1>DisplayHelper Pro Privacy Policy</h1>
-      <p class="effective-date">Effective date: May 27, 2026</p>
+      <p class="effective-date">Effective date: June 2, 2026</p>
       <p>
         DisplayHelper Pro is a local-first macOS menu-bar utility for controlling the built-in
-        display in mirrored Mac setups.
+        display in mirrored Mac setups and optionally helping the Mac switch to stronger saved
+        Wi-Fi.
       </p>
     </header>
 
@@ -155,8 +156,8 @@
           <span>No event tracking, session tracking, advertising pixels, or usage telemetry.</span>
         </div>
         <div>
-          <strong>No automatic reports</strong>
-          <span>Feedback opens an email draft. Nothing is sent unless you choose Send.</span>
+          <strong>No Wi-Fi passwords</strong>
+          <span>Wi-Fi switching uses macOS network details; DisplayHelper Pro does not read passwords.</span>
         </div>
       </section>
 
@@ -187,6 +188,7 @@
           <li>Whether automatic blackout is enabled or disabled.</li>
           <li>Whether built-in mirroring should be enabled on launch.</li>
           <li>Custom keyboard shortcuts for DisplayHelper Pro menu actions.</li>
+          <li>Whether Auto Wi-Fi Switch is enabled and its signal-strength threshold.</li>
           <li>A local display identifier used to remember the preferred external display for mirroring.</li>
           <li>A small bounded log of DisplayHelper Pro diagnostic messages used for bug-report drafts.</li>
           <li>Trial start and trial-expired markers stored locally and in Keychain to manage trial access.</li>
@@ -200,6 +202,21 @@
           brightness value when needed. For temporary dimming, DisplayHelper Pro checks whether a key
           is pressed only so it can restore the displays; it does not record key names, typed text,
           or keyboard history. DisplayHelper Pro does not store your previous brightness.
+        </p>
+      </section>
+
+      <section>
+        <h2>Wi-Fi Status and Location Permission</h2>
+        <p>
+          Auto Wi-Fi Switch is optional. When enabled, DisplayHelper Pro uses public macOS CoreWLAN
+          APIs to read the current Wi-Fi name, access point address, signal strength, and band, and
+          to scan for saved auto-join networks that may be better alternatives.
+        </p>
+        <p>
+          macOS may require Location permission before apps can see Wi-Fi network names and access
+          point addresses. DisplayHelper Pro uses that permission only for Wi-Fi details used by
+          the menu and Auto Wi-Fi Switch. The app does not collect location history, does not send
+          Wi-Fi details to Xintech LLC, and does not read, store, or transmit Wi-Fi passwords.
         </p>
       </section>
 
@@ -243,7 +260,8 @@
         </p>
         <p>
           Bug report drafts also include a bounded excerpt of recent DisplayHelper Pro diagnostic
-          logs. These logs may include local display state and app status details. Feature request
+          logs. These logs may include local display state, app status details, Wi-Fi network names,
+          access point addresses, signal strength, and Auto Wi-Fi Switch decisions. Feature request
           and general feedback drafts do not include logs.
         </p>
       </section>
@@ -270,6 +288,8 @@
           <li>You can leave feedback drafts unsent, edit them, or delete diagnostic details.</li>
           <li>You can delete diagnostic summaries or log excerpts before sending bug reports.</li>
           <li>You can disable automatic update checks in the Sparkle update preferences.</li>
+          <li>You can turn Auto Wi-Fi Switch on or off from the DisplayHelper Pro menu.</li>
+          <li>You can grant, deny, or revoke Location permission for Wi-Fi details in macOS System Settings.</li>
           <li>You can use Pro display controls during the trial without activating a license.</li>
           <li>You can deactivate this Mac from the license window.</li>
           <li>You can remove local app preferences using normal macOS preference-management tools.</li>
