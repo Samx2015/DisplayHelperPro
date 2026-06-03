@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
     <channel>
-        <title>DisplayHelperPro Updates</title>
+        <title>DisplayHelper Pro Updates</title>
         <link>https://github.com/Samx2015/DisplayHelperPro/releases</link>
-        <description>Software updates for DisplayHelperPro.</description>
+        <description>Software updates for DisplayHelper Pro.</description>
         <language>en</language>
         <item>
             <title>1.1.1</title>
-            <pubDate>Wed, 03 Jun 2026 02:20:48 -0700</pubDate>
+            <pubDate>Wed, 03 Jun 2026 02:43:20 -0700</pubDate>
             <link>https://samx2015.github.io/DisplayHelperPro/</link>
-            <sparkle:version>9</sparkle:version>
+            <sparkle:version>10</sparkle:version>
             <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
-            <description sparkle:format="markdown"><![CDATA[# DisplayHelperPro 1.1.1
+            <description sparkle:format="markdown"><![CDATA[# DisplayHelper Pro 1.1.1
 
 ## What's New
 
@@ -25,6 +25,7 @@
 - Avoids showing a Keychain permission prompt during launch if an older local
   build created the saved license item.
 - Fixes duplicate "You're up to date!" dialogs when checking for updates.
+- Uses `DisplayHelper Pro.app` as the installed app name.
 - Refines the compact menu with About, feedback, privacy, license, and update
   actions.
 - Ships in a modern drag-to-Applications DMG.
@@ -32,8 +33,8 @@
 ## Install
 
 1. Open the DMG.
-2. Drag `DisplayHelperPro.app` onto `Applications`.
-3. Open DisplayHelperPro from Applications.
+2. Drag `DisplayHelper Pro.app` onto `Applications`.
+3. Open DisplayHelper Pro from Applications.
 
 The app appears in the macOS menu bar.
 
@@ -44,7 +45,7 @@ may change in future macOS updates.
 
 Requires macOS 13.0 or later.
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="4675983" type="application/octet-stream" sparkle:edSignature="WN1Qu6BdMOafxkbmz2pW7v9vqe6mrQCcfviht41wteSyttugrT6urEvUhJq6jtKo0RRMNaMDIukf3egeGrwCAw=="/>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="4675993" type="application/octet-stream" sparkle:edSignature="9gyfkReYtHvs+eAhdrzAr1ZzQexPlqV8sXAISsHEq3cKtRdZx9u5lb+knh/ShlyibkPQAR9p9UISa3EoOWCIDA=="/>
         </item>
     </channel>
 </rss>
