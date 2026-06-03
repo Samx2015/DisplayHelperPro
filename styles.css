@@ -64,7 +64,7 @@ select {
   grid-template-columns: 1fr auto 1fr;
   align-items: center;
   gap: 1.2rem;
-  padding: 1.1rem clamp(1rem, 4vw, 4rem);
+  padding: 1.1rem clamp(1.15rem, 5vw, 5rem);
   color: #ffffff;
 }
 
@@ -773,6 +773,10 @@ body[data-demo-mode="disabled"] .status-dot {
   transform: translateY(-1.2rem);
 }
 
+#what > .section-kicker {
+  transform: translateY(1.75rem);
+}
+
 .menu-screenshot {
   width: min(100%, 27rem);
   margin: 0;
@@ -1440,6 +1444,10 @@ body[data-demo-mode="disabled"] .status-dot {
 
   #what .controls-layout > div:first-child {
     align-self: start;
+    transform: none;
+  }
+
+  #what > .section-kicker {
     transform: none;
   }
 }
