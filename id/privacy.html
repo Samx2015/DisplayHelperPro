@@ -174,45 +174,132 @@
     <header>
       <h1>Kebijakan Privasi DisplayHelper Pro</h1>
       <p class="effective-date">Tanggal berlaku: 2 Juni 2026</p>
-      <p>DisplayHelper Pro adalah utilitas bilah menu macOS yang mengutamakan pemrosesan lokal untuk mengontrol layar pada setup Mac yang dicerminkan dan secara opsional beralih ke Wi-Fi tersimpan yang lebih kuat.</p>
+      <p>DisplayHelper Pro adalah utilitas bilah menu macOS yang mengutamakan data lokal untuk mengontrol layar bawaan dalam pengaturan Mac yang dicerminkan dan secara opsional membantu Mac beralih ke Wi‑Fi tersimpan yang lebih kuat.</p>
       <p class="notice">Versi terjemahan disediakan untuk kemudahan. <a href="../privacy.html" hreflang="en">Versi bahasa Inggris</a> adalah versi yang berwenang dari kebijakan ini.</p>
     </header>
 
     <main>
-      <section class="summary" aria-label="Privacy highlights">
+      <section class="summary" aria-label="Sorotan privasi">
         <div>
-          <strong>Tidak ada akun app</strong>
-          <span>Tidak ada masuk atau profil pengguna DisplayHelper Pro.</span>
+          <strong>Tidak ada akun aplikasi</strong>
+          <span>Tidak ada DisplayHelper Pro proses masuk atau profil pengguna.</span>
         </div>
         <div>
           <strong>Tidak ada analitik</strong>
-          <span>Tidak ada pelacakan peristiwa, sesi, piksel iklan, atau telemetri penggunaan.</span>
+          <span>Tidak ada pelacakan peristiwa, pelacakan sesi, piksel iklan, atau telemetri penggunaan.</span>
         </div>
         <div>
           <strong>Tidak ada kata sandi Wi-Fi</strong>
-          <span>DisplayHelper Pro tidak membaca atau menyimpan kata sandi Wi-Fi.</span>
+          <span>Wi-Fi peralihan menggunakan macOS detail jaringan; DisplayHelper Pro tidak membaca kata sandi.</span>
         </div>
       </section>
 
       <section>
-        <h2>Pengumpulan data</h2>
-        <p>DisplayHelper Pro tidak mengumpulkan, menyimpan, menjual, membagikan, atau mengirim informasi pribadi melalui fitur manajemen layarnya. Xintech LLC tidak menerima informasi tentang layar, pengaturan, penggunaan, atau perangkat Anda kecuali Anda sengaja mengirimkannya melalui email dukungan atau mengaktifkan lisensi.</p>
+        <h2>Pengumpulan Data</h2>
+        <p>
+          DisplayHelper Pro tidak mengumpulkan, menyimpan, menjual, membagikan, atau mengirimkan informasi pribadi melalui fitur manajemen tampilannya. Xintech LLC tidak menerima informasi tentang tampilan, pengaturan, penggunaan, atau perangkat Anda dari aplikasi kecuali Anda sengaja mengirimkannya melalui dukungan email atau mengaktifkan lisensi.
+        </p>
+        <ul>
+          <li>Tidak diperlukan akun DisplayHelper Pro.</li>
+          <li>Tidak ada analisis, SDK pelacakan, SDK periklanan, atau SDK pelaporan kerusakan yang disertakan.</li>
+          <li>Tidak ada telemetri latar belakang yang dikirim ke Xintech LLC.</li>
+        </ul>
       </section>
+
       <section>
-        <h2>Data lokal</h2>
-        <p>App dapat menyimpan preferensi lokal, penanda masa percobaan, log diagnostik terbatas, dan setelah aktivasi, kunci lisensi di Keychain macOS. Data ini tetap berada di Mac Anda.</p>
+        <h2>Data Lokal</h2>
+        <p>
+          DisplayHelper Pro mungkin menyimpan sejumlah kecil data preferensi lokal dan log diagnostik lokal terbatas di Mac Anda. Ini hanya digunakan untuk membuat aplikasi berperilaku konsisten di antara peluncuran dan untuk menyiapkan draf laporan bug saat Anda memilih untuk melaporkan bug.
+        </p>
+        <p>Preferensi lokal mungkin termasuk:</p>
+        <ul>
+          <li>Apakah pemadaman otomatis diaktifkan atau dinonaktifkan.</li>
+          <li>Apakah pencerminan internal harus diaktifkan saat peluncuran.</li>
+          <li>Pintasan keyboard khusus untuk tindakan menu DisplayHelper Pro.</li>
+          <li>Apakah Auto Wi-Fi Switch diaktifkan dan ambang batas kekuatan sinyalnya.</li>
+          <li>Pengidentifikasi tampilan lokal yang digunakan untuk mengingat tampilan eksternal pilihan untuk pencerminan.</li>
+          <li>Log kecil berisi pesan diagnostik DisplayHelper Pro yang digunakan untuk draf laporan bug.</li>
+          <li>Penanda mulai uji coba dan berakhirnya uji coba disimpan secara lokal dan di Keychain untuk mengelola akses uji coba.</li>
+          <li>Kunci lisensi dan pengidentifikasi instans lisensi Lemon Squeezy disimpan di Keychain Mac Anda jika Anda mengaktifkan lisensi.</li>
+          <li>Stempel waktu lisensi non-rahasia, seperti waktu validasi terakhir yang berhasil, digunakan untuk perilaku tenggang offline.</li>
+        </ul>
+        <p>
+          Aplikasi ini menggunakan macOS API tampilan untuk memeriksa tata letak tampilan, mendeteksi pencerminan, menyesuaikan kecerahan layar bawaan, meredupkan sementara tampilan aktif saat Anda memilih "Dim Displays Until Key Press," kelola Start at Login saat Anda mengaktifkannya, dan memulihkan nilai kecerahan aman tetap bila diperlukan. Untuk peredupan sementara, DisplayHelper Pro memeriksa apakah tombol ditekan saja sehingga dapat mengembalikan tampilan; itu tidak mencatat nama kunci, teks yang diketik, atau riwayat keyboard. DisplayHelper Pro tidak menyimpan kecerahan Anda sebelumnya.
+        </p>
       </section>
+
       <section>
-        <h2>Wi-Fi dan lokasi</h2>
-        <p>macOS memerlukan izin lokasi sebelum app dapat membaca nama Wi-Fi dan detail BSSID. DisplayHelper Pro menggunakan izin ini hanya untuk status Wi-Fi dan peralihan Wi-Fi otomatis opsional.</p>
+        <h2>Status Wi-Fi dan Izin Lokasi</h2>
+        <p>
+          Auto Wi-Fi Switch bersifat opsional. Jika diaktifkan, DisplayHelper Pro menggunakan API macOS CoreWLAN publik untuk membaca nama Wi-Fi saat ini, alamat titik akses, kekuatan sinyal, dan pita, serta untuk memindai jaringan gabung otomatis tersimpan yang mungkin merupakan alternatif yang lebih baik.
+        </p>
+        <p>
+          macOS mungkin memerlukan izin Lokasi sebelum aplikasi dapat melihat Wi-Fi nama jaringan dan alamat titik akses. DisplayHelper Pro menggunakan izin itu hanya untuk detail Wi-Fi yang digunakan oleh menu dan Auto Wi-Fi Switch. Aplikasi tidak mengumpulkan riwayat lokasi, tidak mengirimkan detail Wi-Fi ke Xintech LLC, dan tidak membaca, menyimpan, atau mengirimkan kata sandi Wi-Fi.
+        </p>
       </section>
+
       <section>
-        <h2>Lisensi, pembaruan, dan dukungan</h2>
-        <p>Aktivasi dan validasi lisensi berkomunikasi dengan Lemon Squeezy. Pemeriksaan pembaruan dapat menggunakan feed pembaruan DisplayHelper Pro. Masukan dan laporan bug membuka draf email yang dapat Anda tinjau sebelum dikirim.</p>
+        <h2>Aktivitas Jaringan</h2>
+        <p>
+          Kontrol tampilan normal DisplayHelper Pro tidak memerlukan koneksi jaringan. Aplikasi dapat menghubungi umpan pembaruan Sparkle publik ketika pemeriksaan pembaruan otomatis diaktifkan atau ketika Anda memilih "Check for Updates..." dari menu.
+        </p>
+        <p>
+          Pemeriksaan pembaruan hanya digunakan untuk mengetahui apakah versi yang lebih baru tersedia. Mereka tidak digunakan untuk periklanan, analitik, pelacakan akun, atau pelacakan penggunaan.
+        </p>
+        <p>
+          Jika Anda memilih "Activate License...", DisplayHelper Pro menghubungi Lemon Squeezy untuk mengaktifkan, memvalidasi, atau menonaktifkan lisensi Anda. Permintaan lisensi mengirimkan kunci lisensi dan nama instans Anda berdasarkan nama komputer lokal Mac Anda, seperti "DisplayHelper Pro di Sam's Mac", sehingga Anda dapat mengenali dan menonaktifkan Mac tersebut nanti.
+        </p>
+        <p>
+          Lemon Squeezy dapat mengembalikan lisensi, produk, pesanan, dan metadata pelanggan yang diperlukan untuk memverifikasi lisensi. DisplayHelper Pro hanya menyimpan kunci lisensi, pengidentifikasi instance lisensi lokal, penanda uji coba lokal, dan stempel waktu validasi lokal. Permintaan lisensi tidak digunakan untuk analisis, periklanan, atau pelacakan penggunaan.
+        </p>
       </section>
+
+      <section>
+        <h2>Laporan Bug, Permintaan Fitur, dan Masukan</h2>
+        <p>
+          Item menu "Report a Bug...", "Suggest a Feature...", dan "Send Feedback..." membuka draf di aplikasi email default Anda yang ditujukan ke Xintech LLC. Aplikasi tidak mengirim email secara otomatis. Anda dapat meninjau, mengedit, atau menghapus draf sebelum mengirimkannya.
+        </p>
+        <p>
+          Draf tersebut mungkin berisi ringkasan diagnostik singkat sehingga dukungan dapat memahami konteksnya: versi aplikasi, versi macOS, arsitektur prosesor, status Auto Blackout, status pencerminan bawaan, dan status aplikasi saat ini. Alamat email Anda hanya dapat dilihat oleh Xintech LLC jika Anda mengirim email tersebut.
+        </p>
+        <p>
+          Draf laporan bug juga menyertakan kutipan terbatas dari log diagnostik DisplayHelper Pro terbaru. Log ini mungkin mencakup status tampilan lokal, detail status aplikasi, nama jaringan Wi-Fi, alamat titik akses, kekuatan sinyal, dan keputusan Auto Wi-Fi Switch. Permintaan fitur dan draf masukan umum tidak menyertakan log.
+        </p>
+      </section>
+
+      <section>
+        <h2>Diagnostik dan Log</h2>
+        <p>
+          DisplayHelper Pro menulis pesan diagnostik ke sistem pencatatan log terpadu lokal Apple dan menyimpan log diagnostik lokal aplikasi kecil yang dibatasi. Log ini disimpan secara lokal di Mac Anda. Memilih "Report a Bug..." mengumpulkan kutipan terbatas DisplayHelper Pro saja dari log lokal aplikasi dan memasukkannya ke dalam draf email.
+        </p>
+        <p>
+          Kutipan log menggunakan 20 menit terakhir dari DisplayHelper Pro log jika tersedia. Jika entri terbaru terlalu sedikit, aplikasi dapat melihat kembali hingga 24 jam dan menyertakan entri DisplayHelper Pro terbaru, dibatasi hingga 180 baris dan 16.000 karakter. Tidak ada yang dikirim kecuali Anda memilih Kirim, dan Anda dapat menghapus kutipan log terlebih dahulu.
+        </p>
+      </section>
+
+      <section>
+        <h2>Pilihan Anda</h2>
+        <ul>
+          <li>Anda dapat membiarkan draf masukan tidak terkirim, mengeditnya, atau menghapus detail diagnostik.</li>
+          <li>Anda dapat menghapus ringkasan diagnostik atau kutipan log sebelum mengirim laporan bug.</li>
+          <li>Anda dapat menonaktifkan pemeriksaan pembaruan otomatis di preferensi pembaruan Sparkle.</li>
+          <li>Anda dapat mengaktifkan atau menonaktifkan Auto Wi-Fi Switch dari menu DisplayHelper Pro.</li>
+          <li>Anda dapat memberikan, menolak, atau mencabut izin Lokasi untuk detail Wi-Fi di macOS Pengaturan Sistem.</li>
+          <li>Anda dapat menggunakan kontrol tampilan Pro selama uji coba tanpa mengaktifkan lisensi.</li>
+          <li>Anda dapat menonaktifkan Mac ini dari jendela lisensi.</li>
+          <li>Anda dapat menghapus preferensi aplikasi lokal menggunakan alat manajemen preferensi macOS biasa.</li>
+        </ul>
+      </section>
+
       <section>
         <h2>Kontak</h2>
-        <p>Pertanyaan privasi: support@xintech.co.</p>
+        <p>
+          Untuk pertanyaan privasi atau dukungan, hubungi Xintech LLC di
+          <a href="mailto:admin@xintechllc.com">admin@xintechllc.com</a>.
+        </p>
+        <p>
+          Xintech LLC dapat memperbarui kebijakan ini jika perilaku DisplayHelper Pro berubah. Tanggal efektif di atas akan berubah seiring dengan perubahan kebijakan.
+        </p>
       </section>
     </main>
   </body>
