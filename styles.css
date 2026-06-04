@@ -147,6 +147,89 @@ body:not(.policy-page) .site-header {
   color: #ffffff;
 }
 
+.language-menu {
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.language-menu summary {
+  min-width: 3.9rem;
+  min-height: 2.35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: 0 0.7rem;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.84);
+  background: rgba(16, 19, 18, 0.24);
+  backdrop-filter: blur(14px);
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 320;
+  list-style: none;
+}
+
+.language-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.language-menu summary::after {
+  content: "";
+  width: 0.42rem;
+  height: 0.42rem;
+  margin-top: -0.12rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg);
+  opacity: 0.75;
+}
+
+.language-menu[open] summary,
+.language-menu summary:hover,
+.language-menu summary:focus-visible {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.language-menu-list {
+  position: absolute;
+  top: calc(100% + 0.45rem);
+  right: 0;
+  width: min(21rem, calc(100vw - 2rem));
+  max-height: min(28rem, calc(100svh - 6rem));
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.18rem;
+  overflow: auto;
+  padding: 0.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(10, 15, 16, 0.96);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.language-menu-list a {
+  min-height: 2.15rem;
+  display: flex;
+  align-items: center;
+  padding: 0 0.62rem;
+  border-radius: 7px;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 0.84rem;
+  font-weight: 320;
+  white-space: nowrap;
+}
+
+.language-menu-list a:hover,
+.language-menu-list a:focus-visible,
+.language-menu-list a[aria-current="page"] {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .site-nav a,
 .header-cta {
   min-height: 2.35rem;
@@ -1564,10 +1647,24 @@ body[data-demo-mode="disabled"] .status-dot {
     display: none;
   }
 
+  .language-menu summary {
+    min-width: 3.25rem;
+    padding: 0 0.58rem;
+  }
+
+  .language-menu-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: min(20rem, calc(100vw - 2rem));
+  }
+
   .header-cta {
     min-height: 2.3rem;
+    max-width: 11rem;
+    overflow: hidden;
     padding: 0 0.72rem;
     font-size: 0.82rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
 
   .header-cta .button-glyph {
