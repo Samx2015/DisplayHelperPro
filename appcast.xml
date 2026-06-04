@@ -7,9 +7,9 @@
         <language>en</language>
         <item>
             <title>1.1.1</title>
-            <pubDate>Wed, 03 Jun 2026 18:56:39 -0700</pubDate>
+            <pubDate>Wed, 03 Jun 2026 19:56:06 -0700</pubDate>
             <link>https://samx2015.github.io/DisplayHelperPro/</link>
-            <sparkle:version>14</sparkle:version>
+            <sparkle:version>15</sparkle:version>
             <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[# DisplayHelper Pro 1.1.1
@@ -17,6 +17,7 @@
 ## What's New
 
 - Adds localized Pro homepages for all supported app languages and opens the matching localized homepage from About when available.
+- Fixes localized Pro website links so the About window follows the selected app language, including Swedish.
 - Adds optional Auto Wi-Fi Switch for saved Wi-Fi networks, with a signal
   threshold and conservative scans.
 - Shows current and alternative Wi-Fi network details in the menu using public
@@ -51,7 +52,7 @@ may change in future macOS updates.
 
 Requires macOS 13.0 or later.
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="4826127" type="application/octet-stream" sparkle:edSignature="ZH66ZIei7vmsLs2ziXM4NU+CgEng8B9/PBWoA67l0iKAS5J5LHxW+mTXgDYdoOycHOVIqNLb7ooM+rM3RrrKAA=="/>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="4826018" type="application/octet-stream" sparkle:edSignature="iHT27JAQtdPrDy8Va3nug/MhLMzUY6St8LtBq8u1UmQsrFqGvD7ZH0nL+5B3FK8EwWuZh+0fXilZ9PHh79niCQ=="/>
         </item>
     </channel>
 </rss>
