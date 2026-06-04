@@ -7,9 +7,9 @@
         <language>en</language>
         <item>
             <title>1.1.1</title>
-            <pubDate>Thu, 04 Jun 2026 05:33:01 -0700</pubDate>
+            <pubDate>Thu, 04 Jun 2026 06:03:48 -0700</pubDate>
             <link>https://samx2015.github.io/DisplayHelperPro/</link>
-            <sparkle:version>17</sparkle:version>
+            <sparkle:version>18</sparkle:version>
             <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[# DisplayHelper Pro 1.1.1
@@ -20,6 +20,7 @@
 - Fixes localized Pro website links so the About window follows the selected app language, including Swedish.
 - Adds a compact flag-based language menu label in the app and localized website.
 - Fixes the manual Check for Updates action so Sparkle shows its visible update check instead of starting an invisible probe first.
+- Queues a manual Check for Updates click while Sparkle is still warming up, so the first click is not silently dropped.
 - Adds optional Auto Wi-Fi Switch for saved Wi-Fi networks, with a signal
   threshold and conservative scans.
 - Shows current and alternative Wi-Fi network details in the menu using public
@@ -54,7 +55,7 @@ may change in future macOS updates.
 
 Requires macOS 13.0 or later.
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="3462091" type="application/octet-stream" sparkle:edSignature="NhkBYidNHb/UBT+QJmbn6jDMpwDPUvnyzZuBNgGsEoDl7K2fAHS+dwTj1nGPSaeMoXzbll79vYEC9F4gP/QRCg=="/>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="3462874" type="application/octet-stream" sparkle:edSignature="L4hcCpHWe3Fne7ahGMkEFLYMTPFaP2X+P6VTs24GHeSYRjDsUBglVb5PixVCGqN3MHJv5b1sog1Zg8jSqMpWBg=="/>
         </item>
     </channel>
 </rss>
