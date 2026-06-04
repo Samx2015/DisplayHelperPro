@@ -7,7 +7,7 @@
         <language>en</language>
         <item>
             <title>1.1.1</title>
-            <pubDate>Wed, 03 Jun 2026 16:31:51 -0700</pubDate>
+            <pubDate>Wed, 03 Jun 2026 17:16:25 -0700</pubDate>
             <link>https://samx2015.github.io/DisplayHelperPro/</link>
             <sparkle:version>13</sparkle:version>
             <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
@@ -50,7 +50,7 @@ may change in future macOS updates.
 
 Requires macOS 13.0 or later.
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="4760265" type="application/octet-stream" sparkle:edSignature="YVBJBZam23sa7zGD9SlRlcbFpDshwMGatd6uWZhtCJothTQETVSyhkzhiAb75vVDO5DapMkh2K79tlTGW57TBg=="/>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="4825904" type="application/octet-stream" sparkle:edSignature="s0vw3f+k1spDkErLbwEt2sz9q5ja3U8EyQh6XQpHlsrTn3du0AiXRsKGivv/9oTJdMtd7nls7dHDZdPWNPhZCw=="/>
         </item>
     </channel>
 </rss>
