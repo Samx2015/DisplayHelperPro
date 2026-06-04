@@ -153,6 +153,7 @@ body:not(.policy-page) .site-header {
 }
 
 .language-menu summary {
+  max-width: min(18rem, 46vw);
   min-width: 3.9rem;
   min-height: 2.35rem;
   display: inline-flex;
@@ -169,6 +170,9 @@ body:not(.policy-page) .site-header {
   font-size: 0.82rem;
   font-weight: 320;
   list-style: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .language-menu summary::-webkit-details-marker {
