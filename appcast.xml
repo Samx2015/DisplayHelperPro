@@ -7,15 +7,16 @@
         <language>en</language>
         <item>
             <title>1.1.1</title>
-            <pubDate>Thu, 04 Jun 2026 23:01:21 -0700</pubDate>
+            <pubDate>Thu, 04 Jun 2026 23:47:42 -0700</pubDate>
             <link>https://samx2015.github.io/DisplayHelperPro/</link>
-            <sparkle:version>19</sparkle:version>
+            <sparkle:version>20</sparkle:version>
             <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
             <description sparkle:format="markdown"><![CDATA[# DisplayHelper Pro 1.1.1
 
 ## What's New
 
+- Shows Sparkle update errors in the same centered dialog style as successful update status dialogs.
 - Adds a Keyboard Brightness slider for MacBook built-in keyboard backlights, placed with the display brightness and contrast controls in the Pro menu.
 - Adds localized Pro homepages for all supported app languages and opens the matching localized homepage from About when available.
 - Fixes localized Pro website links so the About window follows the selected app language, including Swedish.
@@ -56,7 +57,7 @@ may change in future macOS updates.
 
 Requires macOS 13.0 or later.
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="3689979" type="application/octet-stream" sparkle:edSignature="mCfUdpw164S6rYUpY6H/CIeHf7haEj5Kf3j0hPPh3icnZVz+rAJEpJ3DtSINgr1FshEDcKlxtzSSqkQChNrnDg=="/>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-20-macOS.dmg" length="3688921" type="application/octet-stream" sparkle:edSignature="7qp5gHKcBQP/a6gs8R6saaAzlElaXNfY1MDRZ651+blGwY56tuFbeTcmNz1X2c9kOdB9BaKuRMlpbw2RYJnBAQ=="/>
         </item>
     </channel>
 </rss>
