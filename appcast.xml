@@ -7,7 +7,7 @@
         <language>en</language>
         <item>
             <title>1.1.1</title>
-            <pubDate>Thu, 04 Jun 2026 06:03:48 -0700</pubDate>
+            <pubDate>Thu, 04 Jun 2026 22:54:54 -0700</pubDate>
             <link>https://samx2015.github.io/DisplayHelperPro/</link>
             <sparkle:version>18</sparkle:version>
             <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
@@ -16,6 +16,7 @@
 
 ## What's New
 
+- Adds a Keyboard Brightness slider for MacBook built-in keyboard backlights, placed with the display brightness and contrast controls in the Pro menu.
 - Adds localized Pro homepages for all supported app languages and opens the matching localized homepage from About when available.
 - Fixes localized Pro website links so the About window follows the selected app language, including Swedish.
 - Adds a compact flag-based language menu label in the app and localized website.
@@ -55,7 +56,7 @@ may change in future macOS updates.
 
 Requires macOS 13.0 or later.
 ]]></description>
-            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="3462874" type="application/octet-stream" sparkle:edSignature="L4hcCpHWe3Fne7ahGMkEFLYMTPFaP2X+P6VTs24GHeSYRjDsUBglVb5PixVCGqN3MHJv5b1sog1Zg8jSqMpWBg=="/>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-macOS.dmg" length="3690018" type="application/octet-stream" sparkle:edSignature="b7D9FvBYSpL2WYCk5hKQzjZU1WQGmCEsUc+A+Lss/czqCg0oIC2ijOa6fJTMV6OdHG3sG55YrXFLumViQ3R7BA=="/>
         </item>
     </channel>
 </rss>
