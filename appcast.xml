@@ -7,6 +7,30 @@
         <language>en</language>
         <item>
             <title>1.1.1</title>
+            <pubDate>Sun, 07 Jun 2026 05:24:15 -0700</pubDate>
+            <link>https://samx2015.github.io/DisplayHelperPro/</link>
+            <sparkle:version>23</sparkle:version>
+            <sparkle:shortVersionString>1.1.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[# DisplayHelper Pro 1.1.1 (23)
+
+## What's New
+
+- Keeps only one HelperSuite family app running at a time to avoid overlapping
+  menu bar behavior across DisplayHelper, DisplayHelper Pro, MacHelper, and
+  MacHelper Pro.
+- Uses the newest launched family app as the active app, with deterministic
+  tie-breaking when launch times are unavailable.
+- Refreshes DMG packaging so Sparkle's bundled updater helpers are signed with
+  secure Developer ID timestamps before notarization.
+- Keeps the App Store DisplayHelper product path unchanged.
+
+Requires macOS 13.0 or later.
+]]></description>
+            <enclosure url="https://github.com/Samx2015/DisplayHelperPro/releases/download/v1.1.1/DisplayHelperPro-1.1.1-23-macOS.dmg" length="3592403" type="application/octet-stream" sparkle:edSignature="cZKn6YQAnAidz+Z1n6aaLXpQU8AWKhRuQM9FNcH3tbur6fdvh2GnRx2XW6AZT9Rh9kbIGHySbd2UCt6mME09BA=="/>
+        </item>
+        <item>
+            <title>1.1.1</title>
             <pubDate>Sun, 07 Jun 2026 04:26:33 -0700</pubDate>
             <link>https://samx2015.github.io/DisplayHelperPro/</link>
             <sparkle:version>22</sparkle:version>
