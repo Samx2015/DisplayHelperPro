@@ -37,26 +37,29 @@
     <link rel="alternate" hreflang="uk" href="https://samx2015.github.io/DisplayHelperPro/uk/privacy.html">
     <link rel="alternate" hreflang="x-default" href="https://samx2015.github.io/DisplayHelperPro/privacy.html">
     <style>
-      :root { color-scheme: dark; --ink: #f5f7f4; --muted: #aab6b0; --paper: #080d0e; --panel: #111819; --panel-soft: #0d1415; --line: #2a3436; --teal: #80f2ea; }
-      * { box-sizing: border-box; }
-      body { margin: 0; color: var(--ink); background: radial-gradient(circle at top left, rgba(128, 242, 234, 0.12), transparent 32rem), linear-gradient(180deg, #0b1112 0%, var(--paper) 48%, #050707 100%); font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif; font-weight: 240; line-height: 1.65; }
-      a { color: var(--teal); font-weight: 320; }
-      header, main { width: min(100%, 880px); margin: 0 auto; padding: 0 24px; }
-      header { padding-top: 36px; padding-bottom: 24px; }
-      main { padding-bottom: 44px; }
-      h1 { max-width: 760px; margin: 0 0 10px; font-size: clamp(2rem, 5vw, 2.7rem); line-height: 1.14; font-weight: 280; letter-spacing: 0; }
-      h2 { margin: 32px 0 8px; font-size: 1.5rem; line-height: 1.18; font-weight: 220; }
-      p { margin: 0 0 13px; color: var(--muted); }
-      ul { margin: 0 0 14px; padding-left: 22px; color: var(--muted); }
-      li + li { margin-top: 4px; }
-      .summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin: 2px 0 28px; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--line); }
-      .summary div { min-height: 96px; padding: 16px; background: var(--panel); }
-      .summary strong, .summary span { display: block; }
-      .summary strong { margin-bottom: 4px; font-weight: 320; }
-      .summary span, .effective-date { color: var(--muted); }
-      .notice { padding: 14px 16px; margin: 0 0 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel-soft); }
-      @media (max-width: 720px) { .summary { grid-template-columns: 1fr; } .summary div { min-height: 0; } }
-    </style>
+  :root { color-scheme: light; --ink: #182023; --muted: #667276; --paper: #fbfbf8; --panel: #fff; --panel-soft: #f3f7f5; --line: #dce6e2; --teal: #0f766e; --teal-dark: #0f766e; --coral: #c2410c; }
+  * { box-sizing: border-box; }
+  body { margin: 0; color: var(--ink); background: var(--paper); font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; font-weight: 300; line-height: 1.65; }
+  a { color: var(--teal); font-weight: 400; }
+  header, main { width: min(100%, 880px); margin: 0 auto; padding: 0 24px; }
+  header { padding-top: 32px; padding-bottom: 24px; }
+  main { padding-bottom: 44px; }
+  h1 { max-width: 760px; margin: 0 0 10px; font-size: clamp(2rem, 5vw, 2.7rem); line-height: 1.14; font-weight: 340; letter-spacing: 0; }
+  h2 { margin: 32px 0 8px; color: var(--ink); font-size: 1.5rem; line-height: 1.18; font-weight: 340; }
+  p { margin: 0 0 13px; color: var(--muted); }
+  ul { margin: 0 0 14px; padding-left: 22px; color: var(--muted); }
+  li + li { margin-top: 4px; }
+  .top-links { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 18px; font-size: .95rem; }
+  .top-links a { padding: 6px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel); text-decoration: none; }
+  .top-links a:hover, .top-links a:focus-visible { background: var(--panel-soft); }
+  .summary { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1px; margin: 2px 0 28px; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--line); }
+  .summary div { min-height: 96px; padding: 16px; background: var(--panel); }
+  .summary strong, .summary span { display: block; }
+  .summary strong { margin-bottom: 4px; color: var(--ink); font-weight: 420; }
+  .summary span, .meta, .effective-date { color: var(--muted); }
+  .notice { padding: 14px 16px; margin: 0 0 24px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel-soft); }
+  @media (max-width: 720px) { .summary { grid-template-columns: 1fr; } .summary div { min-height: 0; } }
+</style>
   </head>
   <body>
     <header>
